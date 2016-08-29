@@ -3,10 +3,10 @@
 ##Description
 AmberCam is a project that combines the camera2 API and the Firebase SDK to create a local storageless camera app. 
 
-##Installation
+###Installation
 Clone the repository and open in android studio. 
 
-##Technologies Used
+###Technologies Used
 
 -Camera2 Api
 
@@ -22,5 +22,5 @@ Clone the repository and open in android studio.
 
 -Material Progress Bars
 
-##Disclaimer
+###Disclaimer
 AmberCam is still in development(pre-release)
