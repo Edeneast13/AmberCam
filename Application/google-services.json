@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "388833893683",
+    "firebase_url": "https://cloudcamera-95ade.firebaseio.com",
+    "project_id": "cloudcamera-95ade",
+    "storage_bucket": "cloudcamera-95ade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388833893683:android:1b4ee6747d33c111",
+        "android_client_info": {
+          "package_name": "com.ambercam.android.camera2basic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388833893683-b6tpbp87ejfiitkvgfroiou70a7ij3lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD0Uio17Hw3NtnJjK3NJSXqvskkqMQcpI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
