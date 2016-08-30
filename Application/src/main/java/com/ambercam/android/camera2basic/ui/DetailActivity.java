@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.ambercam.android.camera2basic.CountData;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.util.Util;
 import com.bumptech.glide.Glide;
@@ -20,6 +21,9 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -44,6 +48,9 @@ public class DetailActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     private FirebaseUser mActiveUser;
     private DatabaseReference mDatabaseReference;
+    private FirebaseDatabase mFirebaseDatabase;
+    private ChildEventListener mChildEventListener;
+    private CountData mCountData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +63,7 @@ public class DetailActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         mFirebaseStorage = FirebaseStorage.getInstance();
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
 
         setAuthStateListener();
 
@@ -141,10 +149,14 @@ public class DetailActivity extends AppCompatActivity {
         mDetailDeleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String user = Util.returnSplitEmail(mActiveUser.getEmail());
+
                 deleteImageFromDatabase(mDatabaseReference,
-                        Util.returnSplitEmail(mActiveUser.getEmail()));
+                        Util.returnSplitEmail(user));
                 deleteImageFromStorage(mFirebaseStorage,
-                        Util.returnSplitEmail(mActiveUser.getEmail()));
+                        Util.returnSplitEmail(user));
+
+                updateDatabaseImageCounter(mFirebaseDatabase, user);
             }
         });
     }
@@ -227,13 +239,67 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     /**
-     * listner for firebase authentication
+     * child event listener that retrieves the current count data for the user
+     */
+    public void setChildEventListener(DatabaseReference reference,
+                                      ChildEventListener childEventListener){
+
+        childEventListener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                mCountData = dataSnapshot.getValue(CountData.class);
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+            }
+        };
+        reference.addChildEventListener(childEventListener);
+    }
+
+    /**
+     * updates the image count when a photo is deleted
+     */
+    public void updateDatabaseImageCounter(FirebaseDatabase database,
+                                           String user){
+
+        //decrements the image count when a photo is deleted
+        mCountData.setImageCount(mCountData.getImageCount()-1);
+
+        //reference to the users image count
+        DatabaseReference reference = database.getReference(user + "_count");
+
+        //reference to the users count data
+        DatabaseReference subReference = reference.child("countData");
+
+        subReference.setValue(mCountData);
+    }
+
+    /**
+     * listener for firebase authentication
      */
     public void setAuthStateListener(){
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(FirebaseAuth firebaseAuth) {
                 mActiveUser = firebaseAuth.getCurrentUser();
+                mDatabaseReference = FirebaseDatabase
+                        .getInstance()
+                        .getReference()
+                        .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()) + "_count");
+                setChildEventListener(mDatabaseReference, mChildEventListener);
             }
         };
     }
