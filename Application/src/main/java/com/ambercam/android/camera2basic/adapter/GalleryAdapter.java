@@ -1,5 +1,6 @@
 package com.ambercam.android.camera2basic.adapter;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -36,26 +37,16 @@ public class GalleryAdapter extends ArrayAdapter {
 
         if(convertView == null){
             convertView = mLayoutInflater.inflate(R.layout.gallery_item, parent, false);
-            mImageView = new ImageView(mContext);
+            mImageView = (ImageView)convertView;
         }
         else{
             mImageView = (ImageView)convertView;
         }
 
+        mImageView.setPadding(2,2,2,2);
         mImageView.setAdjustViewBounds(true);
 
-        /*
-         * images come back with wrong orientation
-         * 90 degree rotation fixes the problem
-         */
         for (int i = 0; i < mArrayList.size(); i++) {
-            /*Picasso.with(mContext)
-                    .load(mArrayList.get(position))
-                    .rotate(90.0f)
-                    .placeholder(R.drawable.camera)
-                    .fit()
-                    .centerCrop()
-                    .into(mImageView);*/
             Glide.with(mContext)
                     .load(mArrayList.get(position))
                     .into(mImageView);

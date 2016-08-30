@@ -51,24 +51,25 @@
         </activity>
         <activity
             android:name=".ui.GalleryActivity"
-            android:label="@string/title_activity_gallery">
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/AmberMaterial">
         </activity>
         <activity
             android:name=".ui.MenuActivity"
             android:label="@string/title_activity_menu"
             android:parentActivityName=".ui.CameraActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/AmberMaterial">
         </activity>
         <activity
             android:name=".ui.DetailActivity"
             android:label="@string/title_activity_detail"
             android:parentActivityName=".ui.GalleryActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/AmberMaterial">
         </activity>
         <activity
             android:name=".ui.UsageActivity"
             android:label="@string/title_activity_usage"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/AmberMaterial"
             android:parentActivityName=".ui.MenuActivity">
         </activity>
     </application>

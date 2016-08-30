@@ -62,7 +62,7 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <color name="accent">#FF5722</color>
+    <color name="accent">#00BCD4</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
@@ -450,6 +450,12 @@
     <string name="title_activity_usage">UsageActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
+    <style name="AmberMaterial" parent="Theme.AppCompat.NoActionBar">
+           <item name="colorPrimary">@color/primary</item>
+           <item name="colorPrimaryDark">@color/primary_dark</item>
+           <item name="colorAccent">@color/accent</item>
+           <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="AppTheme" parent="Theme.Sample"/>
