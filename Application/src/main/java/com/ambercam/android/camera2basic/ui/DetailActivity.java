@@ -7,6 +7,8 @@ import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -28,6 +30,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+
 
 import java.util.ArrayList;
 
@@ -88,6 +91,30 @@ public class DetailActivity extends AppCompatActivity {
         if (mAuthStateListener != null) {
             mAuth.removeAuthStateListener(mAuthStateListener);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        supportFinishAfterTransition();
+        Log.i("Back Pressed: ", "true");
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.home: {
+                supportFinishAfterTransition();
+                Log.i("Home Clicked: ", "true");
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -169,6 +196,7 @@ public class DetailActivity extends AppCompatActivity {
                 .getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(VIBRATE_DURATION);
     }
+
 
     /**
      * removes the image from firebase storage
@@ -302,6 +330,16 @@ public class DetailActivity extends AppCompatActivity {
                 setChildEventListener(mDatabaseReference, mChildEventListener);
             }
         };
+    }
+
+    /**
+     * sign the user out of the app and return to get started activity
+     */
+    public void logOut(){
+        FirebaseAuth.getInstance().signOut();
+        Intent logoutActivity = new Intent(getApplicationContext(), GetStartedActivity.class);
+        logoutActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(logoutActivity);
     }
 
     /**

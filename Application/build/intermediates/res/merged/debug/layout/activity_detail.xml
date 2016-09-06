@@ -20,7 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/detail_imageview"
-        android:layout_marginTop="55dp"/>
+        android:layout_marginTop="55dp"
+        android:transitionName="image"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

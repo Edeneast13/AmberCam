@@ -7,17 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 105,
-                    "endColumn": 259,
-                    "endOffset": 360
+                    "endColumn": 112,
+                    "endOffset": 213
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 323,
-                        "endColumn": 259,
-                        "endOffset": 578
+                        "startOffset": 329,
+                        "endColumn": 112,
+                        "endOffset": 437
                     }
                 }
             },
@@ -25,18 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 365,
-                    "endColumn": 135,
-                    "endOffset": 496
+                    "startOffset": 218,
+                    "endColumn": 201,
+                    "endOffset": 415
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 583,
-                        "endColumn": 135,
-                        "endOffset": 714
+                        "startOffset": 442,
+                        "endColumn": 201,
+                        "endOffset": 639
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 501,
-                    "endColumn": 201,
-                    "endOffset": 698
+                    "startOffset": 420,
+                    "endColumn": 134,
+                    "endOffset": 550
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 719,
-                        "endColumn": 201,
-                        "endOffset": 916
+                        "startOffset": 644,
+                        "endColumn": 134,
+                        "endOffset": 774
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 703,
-                    "endColumn": 134,
-                    "endOffset": 833
+                    "startOffset": 555,
+                    "endColumn": 131,
+                    "endOffset": 682
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 921,
-                        "endColumn": 134,
-                        "endOffset": 1051
+                        "startOffset": 779,
+                        "endColumn": 131,
+                        "endOffset": 906
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 838,
-                    "endColumn": 131,
-                    "endOffset": 965
+                    "startOffset": 687,
+                    "endColumn": 208,
+                    "endOffset": 891
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 1056,
-                        "endColumn": 131,
-                        "endOffset": 1183
+                        "startOffset": 911,
+                        "endColumn": 208,
+                        "endOffset": 1115
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 970,
-                    "endColumn": 208,
-                    "endOffset": 1174
+                    "startOffset": 896,
+                    "endColumn": 214,
+                    "endOffset": 1106
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1188,
-                        "endColumn": 208,
-                        "endOffset": 1392
+                        "startOffset": 1120,
+                        "endColumn": 214,
+                        "endOffset": 1330
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 1179,
-                    "endColumn": 214,
-                    "endOffset": 1389
+                    "startOffset": 1111,
+                    "endColumn": 130,
+                    "endOffset": 1237
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1397,
-                        "endColumn": 214,
-                        "endOffset": 1607
+                        "startOffset": 1335,
+                        "endColumn": 130,
+                        "endOffset": 1461
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 1394,
-                    "endColumn": 130,
-                    "endOffset": 1520
+                    "startOffset": 1242,
+                    "endColumn": 127,
+                    "endOffset": 1365
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1612,
-                        "endColumn": 130,
-                        "endOffset": 1738
+                        "startOffset": 1466,
+                        "endColumn": 127,
+                        "endOffset": 1589
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 1525,
-                    "endColumn": 195,
-                    "endOffset": 1716
+                    "startOffset": 1370,
+                    "endColumn": 250,
+                    "endOffset": 1616
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 1743,
-                        "endColumn": 195,
-                        "endOffset": 1934
+                        "startOffset": 331,
+                        "endColumn": 250,
+                        "endOffset": 577
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1721,
-                    "endColumn": 122,
-                    "endOffset": 1839
+                    "startOffset": 1621,
+                    "endColumn": 233,
+                    "endOffset": 1850
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1939,
-                        "endColumn": 122,
-                        "endOffset": 2057
+                        "startOffset": 1594,
+                        "endColumn": 233,
+                        "endOffset": 1823
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1844,
-                    "endColumn": 164,
-                    "endOffset": 2004
+                    "startOffset": 1855,
+                    "endColumn": 122,
+                    "endOffset": 1973
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 2062,
-                        "endColumn": 164,
-                        "endOffset": 2222
+                        "startOffset": 1828,
+                        "endColumn": 122,
+                        "endOffset": 1946
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 2009,
-                    "endColumn": 120,
-                    "endOffset": 2125
+                    "startOffset": 1978,
+                    "endColumn": 114,
+                    "endOffset": 2088
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 2227,
-                        "endColumn": 120,
-                        "endOffset": 2343
+                        "startOffset": 1951,
+                        "endColumn": 114,
+                        "endOffset": 2061
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 2130,
-                    "endColumn": 127,
-                    "endOffset": 2253
+                    "startOffset": 2093,
+                    "endColumn": 190,
+                    "endOffset": 2279
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 2348,
-                        "endColumn": 127,
-                        "endOffset": 2471
+                        "startOffset": 2066,
+                        "endColumn": 190,
+                        "endOffset": 2252
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 2258,
-                    "endColumn": 185,
-                    "endOffset": 2439
+                    "startOffset": 2284,
+                    "endColumn": 136,
+                    "endOffset": 2416
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 2476,
-                        "endColumn": 185,
-                        "endOffset": 2657
+                        "startOffset": 2257,
+                        "endColumn": 136,
+                        "endOffset": 2389
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 2444,
-                    "endColumn": 148,
-                    "endOffset": 2588
+                    "startOffset": 2421,
+                    "endColumn": 203,
+                    "endOffset": 2620
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 2662,
-                        "endColumn": 148,
-                        "endOffset": 2806
+                        "startOffset": 2394,
+                        "endColumn": 203,
+                        "endOffset": 2593
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 2593,
-                    "endColumn": 170,
-                    "endOffset": 2759
+                    "startOffset": 2625,
+                    "endColumn": 146,
+                    "endOffset": 2767
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 2811,
-                        "endColumn": 170,
-                        "endOffset": 2977
+                        "startOffset": 2598,
+                        "endColumn": 146,
+                        "endOffset": 2740
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 2764,
-                    "endColumn": 129,
-                    "endOffset": 2889
+                    "startOffset": 2772,
+                    "endColumn": 186,
+                    "endOffset": 2954
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 2982,
-                        "endColumn": 129,
-                        "endOffset": 3107
+                        "startOffset": 2745,
+                        "endColumn": 186,
+                        "endOffset": 2927
                     }
                 }
             },
@@ -329,18 +329,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 2894,
-                    "endColumn": 183,
-                    "endOffset": 3073
+                    "startOffset": 2959,
+                    "endColumn": 98,
+                    "endOffset": 3053
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 3112,
-                        "endColumn": 183,
-                        "endOffset": 3291
+                        "startOffset": 2932,
+                        "endColumn": 98,
+                        "endOffset": 3026
                     }
                 }
             },
@@ -348,18 +348,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 3078,
-                    "endColumn": 126,
-                    "endOffset": 3200
+                    "startOffset": 3058,
+                    "endColumn": 92,
+                    "endOffset": 3146
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 3296,
-                        "endColumn": 126,
-                        "endOffset": 3418
+                        "startOffset": 3031,
+                        "endColumn": 92,
+                        "endOffset": 3119
                     }
                 }
             },
@@ -367,227 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 3205,
-                    "endColumn": 250,
-                    "endOffset": 3451
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 325,
-                        "endColumn": 250,
-                        "endOffset": 571
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 3456,
-                    "endColumn": 233,
-                    "endOffset": 3685
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 3423,
-                        "endColumn": 233,
-                        "endOffset": 3652
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 3690,
-                    "endColumn": 122,
-                    "endOffset": 3808
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 3657,
-                        "endColumn": 122,
-                        "endOffset": 3775
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 3813,
-                    "endColumn": 114,
-                    "endOffset": 3923
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 3780,
-                        "endColumn": 114,
-                        "endOffset": 3890
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 3928,
-                    "endColumn": 190,
-                    "endOffset": 4114
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 3895,
-                        "endColumn": 190,
-                        "endOffset": 4081
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 4119,
-                    "endColumn": 136,
-                    "endOffset": 4251
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 4086,
-                        "endColumn": 136,
-                        "endOffset": 4218
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 4256,
-                    "endColumn": 203,
-                    "endOffset": 4455
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 4223,
-                        "endColumn": 203,
-                        "endOffset": 4422
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 4460,
-                    "endColumn": 146,
-                    "endOffset": 4602
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 4427,
-                        "endColumn": 146,
-                        "endOffset": 4569
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 4607,
-                    "endColumn": 186,
-                    "endOffset": 4789
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 4574,
-                        "endColumn": 186,
-                        "endOffset": 4756
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 4794,
-                    "endColumn": 98,
-                    "endOffset": 4888
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 4761,
-                        "endColumn": 98,
-                        "endOffset": 4855
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 4893,
-                    "endColumn": 92,
-                    "endOffset": 4981
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 4860,
-                        "endColumn": 92,
-                        "endOffset": 4948
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 4986,
+                    "startOffset": 3151,
                     "endColumn": 113,
-                    "endOffset": 5095
+                    "endOffset": 3260
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/values-kn/values.xml",
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/values-kn/values.xml",
                     "position": {
-                        "startLine": 33,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 4953,
+                        "startOffset": 3124,
                         "endColumn": 113,
-                        "endOffset": 5062
+                        "endOffset": 3233
                     }
                 }
             }

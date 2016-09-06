@@ -53,4 +53,7 @@
     <string name="detail_delete_text">Delete</string>
     <string name="detail_delete_success_toast">Image Deleted</string>
     <string name="detail_delete_failed_toast">Deletion Failed</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_closed">Drawer Closed</string>
 </resources>

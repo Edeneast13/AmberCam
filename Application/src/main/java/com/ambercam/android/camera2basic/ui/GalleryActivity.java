@@ -1,12 +1,20 @@
 package com.ambercam.android.camera2basic.ui;
 
+import android.app.ActivityOptions;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.ambercam.android.camera2basic.CloudImage;
 import com.ambercam.android.camera2basic.adapter.GalleryAdapter;
@@ -19,14 +27,21 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mikepenz.materialdrawer.AccountHeader;
+import com.mikepenz.materialdrawer.AccountHeaderBuilder;
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
+import com.mikepenz.materialdrawer.model.DividerDrawerItem;
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
-public class GalleryActivity extends Activity {
+public class GalleryActivity extends AppCompatActivity {
 
     private ImageButton mCameraButton;
     private ImageButton mMenuButton;
@@ -38,6 +53,8 @@ public class GalleryActivity extends Activity {
     private ArrayList<String> mFirebaseDataList = new ArrayList<String>();
     private ArrayList<String> mImageUrlList = new ArrayList<>();
     private GridView mGalleryGridView;
+    private Toolbar mToolbar;
+    private Drawer mDrawer;
 
     /**
      * Life Cycle methods
@@ -59,6 +76,8 @@ public class GalleryActivity extends Activity {
         setCameraButtonListener();
         setMenuButtonListener();
         setGalleryGridViewListener();
+
+        setNavDrawer();
     }
 
     @Override
@@ -84,7 +103,7 @@ public class GalleryActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        mImageUrlList.clear();
+        //mImageUrlList.clear();
     }
 
     /**
@@ -94,6 +113,13 @@ public class GalleryActivity extends Activity {
         mCameraButton = (ImageButton)findViewById(R.id.gallery_picture);
         mMenuButton = (ImageButton)findViewById(R.id.gallery_menu);
         mGalleryGridView = (GridView)findViewById(R.id.gallery_gridview);
+    }
+
+    /**
+     * sets the navigation drawer for the activity
+     */
+    public void setNavDrawer(){
+        mDrawer = getNavDrawer();
     }
 
     /**
@@ -116,8 +142,7 @@ public class GalleryActivity extends Activity {
         mMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent menuIntent = new Intent(getApplicationContext(), MenuActivity.class);
-                startActivity(menuIntent);
+                mDrawer.openDrawer();
             }
         });
     }
@@ -132,7 +157,14 @@ public class GalleryActivity extends Activity {
                 Intent detailIntent = new Intent(getApplicationContext(), DetailActivity.class);
                 detailIntent.putStringArrayListExtra("list", mImageUrlList);
                 detailIntent.putExtra("position", position);
-                startActivity(detailIntent);
+
+                ImageView sharedElement = (ImageView)view;
+
+                Bundle bundle = ActivityOptions
+                        .makeSceneTransitionAnimation(GalleryActivity.this, sharedElement, sharedElement.getTransitionName())
+                        .toBundle();
+
+                startActivity(detailIntent, bundle);
             }
         });
     }
@@ -162,7 +194,7 @@ public class GalleryActivity extends Activity {
     }
 
     /**
-     * set child event listener for firebase realtime database
+     * set child event listener for firebase real-time database
      */
     public void setChildEventListener(final DatabaseReference reference,
                                       ChildEventListener childEventListener){
@@ -333,5 +365,163 @@ public class GalleryActivity extends Activity {
 
             }
         }
+    }
+
+    /**
+     * methods for nav drawer
+     */
+
+    /**
+     * opens the play store using an intent so users can rate the app
+     */
+    public void openPlayStore(){
+        Uri uri = Uri.parse("market://details?id=" + getApplicationContext().getPackageName());
+        Intent playStoreIntent = new Intent(Intent.ACTION_VIEW, uri);
+
+        //allows for us to return to app from play store using back button
+        playStoreIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+
+        try{
+            startActivity(playStoreIntent);
+        }
+        catch (ActivityNotFoundException e){
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("market://details?id=" + getApplicationContext().getPackageName())));
+        }
+    }
+
+    /**
+     * allows the user to chose there favorite email app and send feedback to the development team
+     */
+    public void sendFeedBack(){
+        Intent feedbackIntent = new Intent(Intent.ACTION_SENDTO);
+        String uriText = "mailto:" + Uri.encode("appdevbri@gmail.com") +
+                "?subject=" + Uri.encode("AmberCam Feedback");
+
+        Uri uri = Uri.parse(uriText);
+        feedbackIntent.setData(uri);
+
+        //allows for us to return to app from play store using back button
+        feedbackIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+
+        startActivity(Intent.createChooser(feedbackIntent, "Send mail......"));
+    }
+
+    /**
+     * opens the cloud usage activity
+     */
+    public void cloudUsageIntent() {
+        Intent usageIntent = new Intent(getApplicationContext(), UsageActivity.class);
+        startActivity(usageIntent);
+    }
+
+    /**
+     * logs the user out of firebase and returns the user to the get started activity
+     */
+    public void logOut(){
+        FirebaseAuth.getInstance().signOut();
+        Intent logoutActivity = new Intent(getApplicationContext(), GetStartedActivity.class);
+        startActivity(logoutActivity);
+    }
+
+    /**
+     * sets the nav drawer behavior
+     */
+    public Drawer getNavDrawer(){
+
+        new DrawerBuilder().withActivity(this).build();
+
+        //set the nav drawer elements
+        PrimaryDrawerItem cloudUsageItem = new PrimaryDrawerItem()
+                .withIdentifier(1)
+                .withName(getString(R.string.menu_element_usage))
+                .withIcon(R.drawable.ic_cloud_black_48dp);
+
+        PrimaryDrawerItem rateItem = new PrimaryDrawerItem()
+                .withIdentifier(2)
+                .withName(getString(R.string.menu_element_rate_app))
+                .withIcon(R.drawable.ic_star_rate_black_18dp);
+
+        PrimaryDrawerItem feedbackItem = new PrimaryDrawerItem()
+                .withIdentifier(2)
+                .withName(getString(R.string.menu_element_feedback))
+                .withIcon(R.drawable.ic_feedback_black_24dp);
+
+        PrimaryDrawerItem settingsItem = new PrimaryDrawerItem()
+                .withIdentifier(3)
+                .withName(getString(R.string.menu_element_settings))
+                .withIcon(R.drawable.ic_settings_black_24dp);
+
+        PrimaryDrawerItem logoutItem = new PrimaryDrawerItem()
+                .withIdentifier(3)
+                .withName(getString(R.string.menu_element_log_out))
+                .withIcon(R.drawable.ic_power_settings_new_black_24dp);
+
+        //create the drawer
+        Drawer result = new DrawerBuilder()
+                .withActivity(this)
+                .withToolbar(mToolbar)
+                .withAccountHeader(setNavDrawerHeader())
+                .addDrawerItems(cloudUsageItem,
+                        new DividerDrawerItem(),
+                        feedbackItem,
+                        rateItem,
+                        new DividerDrawerItem(),
+                        settingsItem,
+                        logoutItem)
+                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+                    @Override
+                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
+                        switch (position) {
+                            case 0: {
+                                break;
+                            }
+                            case 1: {
+                                cloudUsageIntent();
+                                break;
+                            }
+                            case 2: {
+                                break;
+                            }
+                            case 3: {
+                                sendFeedBack();
+                                break;
+                            }
+                            case 4: {
+                                //openPlayStore();
+                                break;
+                            }
+                            case 5: {
+                                break;
+                            }
+                            case 6: {
+                                //TODO: settings intent
+                                break;
+                            }
+                            case 7: {
+                                logOut();
+                                break;
+                            }
+                        }
+                        return true;
+                    }
+                })
+                .build();
+
+        return result;
+    }
+
+    /**
+     * sets the header image for the nav drawer
+     */
+    public AccountHeader setNavDrawerHeader(){
+        AccountHeader headerResult = new AccountHeaderBuilder()
+                .withActivity(this)
+                .withHeaderBackground(R.drawable.fall_camera)
+                .build();
+
+        return headerResult;
     }
 }

@@ -46,9 +46,7 @@ public class MenuAdapter extends ArrayAdapter {
 
         Log.i("Menu Text: ", mMenuTextView.getText().toString());
 
-        Glide.with(mContext)
-                .load(mMenuElementList.get(position).getIcon())
-                .into(mMenuImageView);
+        mMenuImageView.setImageResource(mMenuElementList.get(position).getIcon());
 
         return convertView;
     }
