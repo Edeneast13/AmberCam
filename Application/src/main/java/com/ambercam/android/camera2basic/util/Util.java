@@ -31,7 +31,7 @@ public class Util {
     /**
      * gets the devices screen height
      */
-    public int returnScreenHeight(Context context){
+    public static int returnScreenHeight(Context context){
         WindowManager windowManager = (WindowManager)context
                 .getSystemService(Context.WINDOW_SERVICE);
         Display display = windowManager.getDefaultDisplay();
@@ -44,7 +44,7 @@ public class Util {
     /**
      * gets the devices screen width
      */
-    public int returnScreenWidth(Context context){
+    public static int returnScreenWidth(Context context){
         WindowManager windowManager = (WindowManager)context
                 .getSystemService(Context.WINDOW_SERVICE);
         Display display = windowManager.getDefaultDisplay();

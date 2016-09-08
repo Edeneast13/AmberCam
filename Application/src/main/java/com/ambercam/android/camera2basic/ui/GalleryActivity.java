@@ -3,13 +3,12 @@ package com.ambercam.android.camera2basic.ui;
 import android.app.ActivityOptions;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
+import android.transition.Explode;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -33,7 +32,6 @@ import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import java.util.ArrayList;
@@ -53,7 +51,6 @@ public class GalleryActivity extends AppCompatActivity {
     private ArrayList<String> mFirebaseDataList = new ArrayList<String>();
     private ArrayList<String> mImageUrlList = new ArrayList<>();
     private GridView mGalleryGridView;
-    private Toolbar mToolbar;
     private Drawer mDrawer;
 
     /**
@@ -65,19 +62,21 @@ public class GalleryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        initializeViews();
+        if(savedInstanceState == null){
+            initializeViews();
 
-        mAuth = FirebaseAuth.getInstance();
+            mAuth = FirebaseAuth.getInstance();
 
-        //firebase listeners
-        setAuthStateListener();
+            //firebase listeners
+            setAuthStateListener();
 
-        //button listeners
-        setCameraButtonListener();
-        setMenuButtonListener();
-        setGalleryGridViewListener();
+            //button listeners
+            setCameraButtonListener();
+            setMenuButtonListener();
+            setGalleryGridViewListener();
 
-        setNavDrawer();
+            setNavDrawer();
+        }
     }
 
     @Override
@@ -462,7 +461,6 @@ public class GalleryActivity extends AppCompatActivity {
         //create the drawer
         Drawer result = new DrawerBuilder()
                 .withActivity(this)
-                .withToolbar(mToolbar)
                 .withAccountHeader(setNavDrawerHeader())
                 .addDrawerItems(cloudUsageItem,
                         new DividerDrawerItem(),

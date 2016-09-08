@@ -1,5 +1,7 @@
 package com.ambercam.android.camera2basic.ui;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +20,7 @@ import android.widget.Toast;
 
 import com.ambercam.android.camera2basic.CountData;
 import com.ambercam.android.camera2basic.R;
+import com.ambercam.android.camera2basic.util.OnSwipeTouchListener;
 import com.ambercam.android.camera2basic.util.Util;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -55,6 +59,10 @@ public class DetailActivity extends AppCompatActivity {
     private ChildEventListener mChildEventListener;
     private CountData mCountData;
 
+    final String SWIPEDIRECTIONLEFT = "LEFT";
+    final String SWIPEDIRECTIONRIGHT = "RIGHT";
+    final int VIEWSLIDEDURATION = 350;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +80,7 @@ public class DetailActivity extends AppCompatActivity {
 
         setDetailImageViewLongClickListener();
         setDetailDeleteButtonListener();
+        setDetailImageViewSwipeListener();
 
         SplitUrl splitUrl = new SplitUrl(mPosition, mImageUrlList);
         splitUrl.run();
@@ -93,28 +102,32 @@ public class DetailActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        supportFinishAfterTransition();
-        Log.i("Back Pressed: ", "true");
-        super.onBackPressed();
-    }
-
+    /**
+     * menu methods
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.home: {
-                supportFinishAfterTransition();
-                Log.i("Home Clicked: ", "true");
-                return true;
+            case R.id.delete_forever:{
+                //if delete button is already visible it is hidden
+                if(mRelativeLayout.getVisibility() == View.VISIBLE){
+                    mRelativeLayout.setVisibility(View.GONE);
+                }
+                else{
+                    //if button is not visible it is shown
+                    mRelativeLayout.setVisibility(View.VISIBLE);
+                    setDeviceVibration();
+                }
             }
+            default: return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -162,9 +175,7 @@ public class DetailActivity extends AppCompatActivity {
         mDetailImageView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                mRelativeLayout.setVisibility(View.VISIBLE);
-                setDeviceVibration();
-                return false;
+                return true;
             }
         });
     }
@@ -186,6 +197,60 @@ public class DetailActivity extends AppCompatActivity {
                 updateDatabaseImageCounter(mFirebaseDatabase, user);
             }
         });
+    }
+
+    /**
+     * swipe listener for detail image view
+     */
+    public void setDetailImageViewSwipeListener() {
+        mDetailImageView.setOnTouchListener(new OnSwipeTouchListener(getApplicationContext()) {
+
+            @Override
+            public void onSwipeLeft() {
+
+                if (mImageUrlList.size() - 1 == mPosition) {
+                    Toast.makeText(getApplicationContext(), "There's no more pictures!", Toast.LENGTH_SHORT).show();
+                } else {
+                    mPosition = mPosition + 1;
+                    updateUI(mImageUrlList, mPosition);
+                }
+                setSlideTransition(SWIPEDIRECTIONLEFT);
+            }
+
+            @Override
+            public void onSwipeRight() {
+
+                if (mPosition == 0) {
+                    Toast.makeText(getApplicationContext(), "That's your first picture!", Toast.LENGTH_SHORT).show();
+                } else {
+                    mPosition = mPosition - 1;
+                    updateUI(mImageUrlList, mPosition);
+                }
+                setSlideTransition(SWIPEDIRECTIONRIGHT);
+            }
+        });
+    }
+
+    /**
+     * slide transition for touch swipe listener
+     */
+    public void setSlideTransition(String direction){
+        if(direction.equals(SWIPEDIRECTIONLEFT)){
+            ObjectAnimator mover = ObjectAnimator.ofFloat(mDetailImageView,
+                    "translationX", Util.returnScreenWidth(this), 0f);
+            AnimatorSet animatorSet = new AnimatorSet();
+            mover.setDuration(VIEWSLIDEDURATION);
+            animatorSet.play(mover);
+            animatorSet.start();
+        }
+        else if(direction.equals(SWIPEDIRECTIONRIGHT)){
+            ObjectAnimator mover = ObjectAnimator.ofFloat(mDetailImageView,
+                    "translationX", -(Util.returnScreenWidth(this)), 0f);
+            AnimatorSet animatorSet = new AnimatorSet();
+            mover.setDuration(VIEWSLIDEDURATION);
+            animatorSet.play(mover);
+            animatorSet.start();
+        }
     }
 
     /**

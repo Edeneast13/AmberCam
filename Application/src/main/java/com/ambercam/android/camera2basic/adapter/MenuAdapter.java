@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.MenuElement;
-import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 

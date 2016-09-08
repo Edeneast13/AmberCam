@@ -116,7 +116,7 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <color name="divider">#B6B6B6</color>
+    <color name="divider">#f5f5f5</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
@@ -973,6 +973,7 @@
     <string name="library_materialize_year">2016</string>
     <string name="material_drawer_close">Close</string>
     <string name="material_drawer_open">Open</string>
+    <string name="menu_delete_forever">Delete</string>
     <string name="menu_element_feedback">Send Feedback</string>
     <string name="menu_element_log_out">Log Out</string>
     <string name="menu_element_rate_app">Rate in Play Store</string>
@@ -1000,6 +1001,7 @@
            <item name="android:statusBarColor">@color/primary_dark</item>
 
            <item name="android:windowContentTransitions">true</item>
+           <item name="android:windowEnterTransition">@transition/gallery_enter</item>
     </style>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>

@@ -3,6 +3,7 @@ package com.ambercam.android.camera2basic.ui;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
@@ -25,6 +26,9 @@ public class UsageActivity extends AppCompatActivity {
     private TextView mUsageTextView;
     private MaterialProgressBar mUsageProgessBar;
     private TextView mUsagePercentTextView;
+    private CardView mCloudCardView;
+    private CardView mProgressCardView;
+    private CardView mPurchaseCardView;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -43,6 +47,8 @@ public class UsageActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         setFirebaseAuthListener();
+
+        setCardBackgroundColors();
     }
 
     @Override
@@ -67,6 +73,9 @@ public class UsageActivity extends AppCompatActivity {
         mUsageTextView = (TextView)findViewById(R.id.usage_text);
         mUsageProgessBar = (MaterialProgressBar)findViewById(R.id.usage_progress_bar);
         mUsagePercentTextView = (TextView)findViewById(R.id.usage_percent_text);
+        mCloudCardView = (CardView)findViewById(R.id.image_surface);
+        mProgressCardView = (CardView)findViewById(R.id.progress_surface);
+        mPurchaseCardView = (CardView)findViewById(R.id.purchase_surface);
     }
 
     /**
@@ -156,5 +165,11 @@ public class UsageActivity extends AppCompatActivity {
     public void setCloudPercentText(int max, int count){
         int percentUsed = ((count*100)/max);
         mUsagePercentTextView.setText(percentUsed + "%");
+    }
+
+    public void setCardBackgroundColors(){
+        mPurchaseCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
+        mProgressCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
+        mCloudCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
     }
 }
