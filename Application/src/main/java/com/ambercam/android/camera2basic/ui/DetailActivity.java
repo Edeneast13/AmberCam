@@ -61,7 +61,7 @@ public class DetailActivity extends AppCompatActivity {
 
     final String SWIPEDIRECTIONLEFT = "LEFT";
     final String SWIPEDIRECTIONRIGHT = "RIGHT";
-    final int VIEWSLIDEDURATION = 350;
+    final int VIEWSLIDEDURATION = 300;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -214,7 +214,12 @@ public class DetailActivity extends AppCompatActivity {
                     mPosition = mPosition + 1;
                     updateUI(mImageUrlList, mPosition);
                 }
-                setSlideTransition(SWIPEDIRECTIONLEFT);
+
+                SlideImageViewAnimation setSlide = new SlideImageViewAnimation(
+                        getApplicationContext(),
+                        mDetailImageView,
+                        SWIPEDIRECTIONLEFT);
+                setSlide.run();
             }
 
             @Override
@@ -226,31 +231,14 @@ public class DetailActivity extends AppCompatActivity {
                     mPosition = mPosition - 1;
                     updateUI(mImageUrlList, mPosition);
                 }
-                setSlideTransition(SWIPEDIRECTIONRIGHT);
+
+                SlideImageViewAnimation setSlide = new SlideImageViewAnimation(
+                        getApplicationContext(),
+                        mDetailImageView,
+                        SWIPEDIRECTIONRIGHT);
+                setSlide.run();
             }
         });
-    }
-
-    /**
-     * slide transition for touch swipe listener
-     */
-    public void setSlideTransition(String direction){
-        if(direction.equals(SWIPEDIRECTIONLEFT)){
-            ObjectAnimator mover = ObjectAnimator.ofFloat(mDetailImageView,
-                    "translationX", Util.returnScreenWidth(this), 0f);
-            AnimatorSet animatorSet = new AnimatorSet();
-            mover.setDuration(VIEWSLIDEDURATION);
-            animatorSet.play(mover);
-            animatorSet.start();
-        }
-        else if(direction.equals(SWIPEDIRECTIONRIGHT)){
-            ObjectAnimator mover = ObjectAnimator.ofFloat(mDetailImageView,
-                    "translationX", -(Util.returnScreenWidth(this)), 0f);
-            AnimatorSet animatorSet = new AnimatorSet();
-            mover.setDuration(VIEWSLIDEDURATION);
-            animatorSet.play(mover);
-            animatorSet.start();
-        }
     }
 
     /**
@@ -438,6 +426,49 @@ public class DetailActivity extends AppCompatActivity {
             String[] secondSplitUrl = secondUrl.split("\\?");
             mFinalUrl = secondSplitUrl[0];
             return mFinalUrl;
+        }
+    }
+
+    /**
+     * handles detail imageview slide animation off thread
+     */
+    public class SlideImageViewAnimation implements Runnable{
+
+        private ImageView mImageView;
+        private Context mContext;
+        private String mDirection;
+
+        public SlideImageViewAnimation(Context context, ImageView imageView, String direction) {
+            this.mContext = context;
+            this.mImageView = imageView;
+            this.mDirection = direction;
+        }
+
+        @Override
+        public void run() {
+            setSlideTransition(mDirection, mImageView);
+        }
+
+        /**
+         * slide transition for touch swipe listener
+         */
+        public void setSlideTransition(String direction, ImageView image){
+            if(direction.equals(SWIPEDIRECTIONLEFT)){
+                ObjectAnimator mover = ObjectAnimator.ofFloat(image,
+                        "translationX", Util.returnScreenWidth(mContext), 0f);
+                AnimatorSet animatorSet = new AnimatorSet();
+                mover.setDuration(VIEWSLIDEDURATION);
+                animatorSet.play(mover);
+                animatorSet.start();
+            }
+            else if(direction.equals(SWIPEDIRECTIONRIGHT)){
+                ObjectAnimator mover = ObjectAnimator.ofFloat(image,
+                        "translationX", -(Util.returnScreenWidth(mContext)), 0f);
+                AnimatorSet animatorSet = new AnimatorSet();
+                mover.setDuration(VIEWSLIDEDURATION);
+                animatorSet.play(mover);
+                animatorSet.start();
+            }
         }
     }
 }
