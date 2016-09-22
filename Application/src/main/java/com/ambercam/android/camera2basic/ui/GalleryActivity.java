@@ -105,6 +105,12 @@ public class GalleryActivity extends AppCompatActivity {
         //mImageUrlList.clear();
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        //overridePendingTransition(R.transition.slide_right, R.transition.fade_in);
+    }
+
     /**
      * initialize the views for the activity
      */
@@ -130,6 +136,7 @@ public class GalleryActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent cameraIntent = new Intent(getApplicationContext(), CameraActivity.class);
                 startActivity(cameraIntent);
+                overridePendingTransition(R.transition.slide_left, R.transition.fade_out);
             }
         });
     }

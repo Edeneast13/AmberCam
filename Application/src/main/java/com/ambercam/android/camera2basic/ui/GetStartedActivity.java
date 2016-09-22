@@ -133,6 +133,7 @@ public class GetStartedActivity extends Activity {
                     Intent autoLoginIntent = new Intent(getApplicationContext(),
                             CameraActivity.class);
                     startActivity(autoLoginIntent);
+                    overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
                 }
             }
         };
@@ -176,6 +177,7 @@ public class GetStartedActivity extends Activity {
             public void onClick(View v) {
                 Intent createIntent = new Intent(getApplicationContext(), CreateAccountActivity.class);
                 startActivity(createIntent);
+                overridePendingTransition(R.transition.slide_right, R.transition.fade_out);
             }
         });
     }

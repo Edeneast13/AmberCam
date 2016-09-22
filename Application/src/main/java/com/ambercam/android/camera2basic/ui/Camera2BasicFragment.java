@@ -1268,9 +1268,9 @@ public class Camera2BasicFragment extends Fragment
         mGalleryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent galleryIntent = new Intent(getActivity(), GalleryActivity.class);
                 startActivity(galleryIntent);
+                getActivity().overridePendingTransition(R.transition.slide_right, R.transition.fade_out);
             }
         });
     }

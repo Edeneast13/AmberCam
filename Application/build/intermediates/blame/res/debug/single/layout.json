@@ -24,12 +24,12 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_profile.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_profile.xml"
-    },
-    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/activity_camera.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout/activity_camera.xml"
+    },
+    {
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_profile.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_profile.xml"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
@@ -92,12 +92,12 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/res/layout/md_dialog_basic_check.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/activity_usage.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout/activity_usage.xml"
-    },
-    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_slider.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_slider.xml"
+    },
+    {
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/activity_usage.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout/activity_usage.xml"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/menu_item.xml",
@@ -116,16 +116,16 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/layout/design_layout_tab_icon.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/gallery_gridview.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout/gallery_gridview.xml"
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_container.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_container.xml"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/md_dialog_custom.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/res/layout/md_dialog_custom.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_container.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_container.xml"
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/gallery_gridview.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout/gallery_gridview.xml"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/activity_detail.xml",
@@ -144,12 +144,12 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout/menu_listview.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_expandable.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_expandable.xml"
-    },
-    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_expandable.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_expandable.xml"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
@@ -172,20 +172,20 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_compact_header.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_secondary.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_secondary.xml"
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_item_secondary.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/5.6.0/res/layout/material_drawer_item_secondary.xml"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/material_drawer_fits_not.xml",

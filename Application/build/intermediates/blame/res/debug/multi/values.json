@@ -604,14 +604,7 @@
                     "endOffset": 3684
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/values/colors.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 1066,
-                        "endColumn": 49,
-                        "endOffset": 1111
-                    }
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/values/colors.xml"
                 }
             },
             {
@@ -1187,7 +1180,14 @@
                     "endOffset": 7172
                 },
                 "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/values/colors.xml"
+                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1024,
+                        "endColumn": 41,
+                        "endOffset": 1061
+                    }
                 }
             },
             {

@@ -94,6 +94,12 @@ public class CreateAccountActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(getString(R.string.app_title));
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.transition.slide_left, R.transition.fade_out);
+    }
+
     /**
      * listener for firebase authentication
      */

@@ -4773,8 +4773,13 @@ containing a value of this type.
         public static final int Widget_SampleMessageTile=0x7f0801af;
     }
     public static final class transition {
-        public static final int detail_slide=0x7f050000;
-        public static final int gallery_enter=0x7f050001;
+        public static final int activity_fade=0x7f050000;
+        public static final int detail_slide=0x7f050001;
+        public static final int fade_in=0x7f050002;
+        public static final int fade_out=0x7f050003;
+        public static final int gallery_enter=0x7f050004;
+        public static final int slide_left=0x7f050005;
+        public static final int slide_right=0x7f050006;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
