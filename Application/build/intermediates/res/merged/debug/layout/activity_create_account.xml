@@ -5,8 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.CreateAccountActivity"
+    android:background="@color/base_background">
 
-    tools:context=".ui.CreateAccountActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,52 +25,83 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="35dp">
+            android:layout_marginTop="85dp">
 
-            <EditText
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/get_started_email"
-                android:backgroundTint="@color/primary"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/primary_text"
-                android:id="@+id/create_account_email"
-                android:inputType="textEmailAddress"/>
+                android:textColorHint="@color/accent">
 
-            <EditText
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/get_started_email"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@color/accent"
+                    android:textColorHint="@color/accent"
+                    android:id="@+id/create_account_email"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="sans_serif"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/create_account_confirm_email"
-                android:backgroundTint="@color/primary"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/primary_text"
-                android:id="@+id/create_account_confirm_email"
-                android:paddingTop="30dp"
-                android:inputType="textEmailAddress"/>
+                android:textColorHint="@color/accent">
 
-            <EditText
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/create_account_confirm_email"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@color/accent"
+                    android:textColorHint="@color/accent"
+                    android:id="@+id/create_account_confirm_email"
+                    android:paddingTop="30dp"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="sans_serif"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/get_started_password"
-                android:backgroundTint="@color/primary"
-                android:textColor="@color/primary_text"
-                android:paddingTop="50dp"
-                android:textColorHint="@color/primary_text"
-                android:id="@+id/create_account_password"
-                android:inputType="textPassword"/>
+                android:textColorHint="@color/accent">
 
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/get_started_password"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@color/accent"
+                    android:paddingTop="50dp"
+                    android:textColorHint="@color/accent"
+                    android:id="@+id/create_account_password"
+                    android:inputType="textPassword"
+                    android:fontFamily="sans_serif"/>
 
-            <EditText
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/create_account_confirm_password"
-                android:backgroundTint="@color/primary"
-                android:textColor="@color/primary_text"
-                android:paddingTop="30dp"
-                android:textColorHint="@color/primary_text"
-                android:id="@+id/create_account_confirm_password"
-                android:inputType="textPassword"
-                android:layout_marginBottom="150dp"/>
+                android:textColorHint="@color/accent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/create_account_confirm_password"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@color/accent"
+                    android:paddingTop="30dp"
+                    android:textColorHint="@color/accent"
+                    android:id="@+id/create_account_confirm_password"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="150dp"
+                    android:fontFamily="sans_serif"/>
+
+            </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
 

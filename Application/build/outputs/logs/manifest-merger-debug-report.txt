@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:17:1-77:12
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:17:1-80:12
 	package
 		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:17:11-54
 		INJECTED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
@@ -38,7 +38,7 @@ ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/s
 	android:name
 		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:27:22-63
 application
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:29:5-75:19
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:29:5-78:19
 MERGED from [com.android.support:support-v4:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
@@ -92,6 +92,48 @@ MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downlo
 MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
@@ -1187,73 +1229,79 @@ MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downlo
 	android:theme
 		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:33:9-45
 activity#com.ambercam.android.camera2basic.ui.GetStartedActivity
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:34:9-42:20
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:34:9-43:20
 	android:label
 		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:36:13-46
+	android:theme
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:37:13-49
 	android:name
 		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:35:13-50
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:37:13-41:29
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:38:17-68
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:39:17-68
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:38:25-66
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:40:17-76
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:41:17-76
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:40:27-74
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:41:27-74
 activity#com.ambercam.android.camera2basic.ui.CameraActivity
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:43:9-46:20
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:44:9-48:20
 	android:label
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:45:13-45
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:46:13-45
+	android:theme
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:47:13-49
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:44:13-46
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:45:13-46
 activity#com.ambercam.android.camera2basic.ui.CreateAccountActivity
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:47:9-51:20
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:49:9-54:20
 	android:label
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:49:13-66
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:51:13-66
+	android:parentActivityName
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:53:13-64
 	android:theme
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:50:13-62
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:52:13-49
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:48:13-53
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:50:13-53
 activity#com.ambercam.android.camera2basic.ui.GalleryActivity
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:52:9-56:20
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:55:9-59:20
 	android:label
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:54:13-59
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:57:13-59
 	android:theme
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:55:13-49
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:58:13-49
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:53:13-47
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:56:13-47
 activity#com.ambercam.android.camera2basic.ui.MenuActivity
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:57:9-62:20
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:60:9-65:20
 	android:label
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:59:13-56
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:62:13-56
 	android:parentActivityName
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:60:13-60
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:63:13-60
 	android:theme
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:61:13-49
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:64:13-49
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:58:13-44
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:61:13-44
 activity#com.ambercam.android.camera2basic.ui.DetailActivity
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:63:9-68:20
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:66:9-71:20
 	android:label
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:65:13-58
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:68:13-58
 	android:parentActivityName
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:66:13-61
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:69:13-61
 	android:theme
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:67:13-49
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:70:13-49
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:64:13-46
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:67:13-46
 activity#com.ambercam.android.camera2basic.ui.UsageActivity
-ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:69:9-74:20
+ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:72:9-77:20
 	android:label
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:71:13-57
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:74:13-57
 	android:parentActivityName
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:73:13-58
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:76:13-58
 	android:theme
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:72:13-49
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:75:13-49
 	android:name
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:70:13-45
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:73:13-45
 uses-sdk
 INJECTED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:support-v4:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
@@ -1309,6 +1357,49 @@ MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downlo
 MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:design:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-v4:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-v4:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:recyclerview-v7:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-ui:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:24.2.0] /Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58

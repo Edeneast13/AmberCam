@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +38,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     private User mUser;
     final int BASE_IMAGE_MAX = 100;
     final int BASE_IMAGE_COUNT = 0;
+    private Toolbar mToolbar;
 
     /**
      * LIFE CYCLE methods
@@ -45,6 +49,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_account);
 
         initializeViews();
+        initializeToolbarBehavior(mToolbar);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -76,6 +81,17 @@ public class CreateAccountActivity extends AppCompatActivity {
         mPasswordEditText = (EditText)findViewById(R.id.create_account_password);
         mConfirmPasswordEditText = (EditText)findViewById(R.id.create_account_confirm_password);
         mCreateButton = (Button)findViewById(R.id.create_account_create);
+        mToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+    }
+
+    /**
+     * handles toolbar behavior
+     */
+    public void initializeToolbarBehavior(Toolbar toolbar){
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.app_title));
     }
 
     /**

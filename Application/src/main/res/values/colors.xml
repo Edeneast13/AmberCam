@@ -25,4 +25,5 @@
     <color name="secondary_text">#727272</color>
     <color name="accent">#00BCD4</color>
     <color name="divider">#f5f5f5</color>
+    <color name="base_background">#f5f5f5</color>
 </resources>
