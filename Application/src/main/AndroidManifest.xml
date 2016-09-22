@@ -58,12 +58,6 @@
             android:theme="@style/AmberMaterial">
         </activity>
         <activity
-            android:name=".ui.MenuActivity"
-            android:label="@string/title_activity_menu"
-            android:parentActivityName=".ui.CameraActivity"
-            android:theme="@style/AmberMaterial">
-        </activity>
-        <activity
             android:name=".ui.DetailActivity"
             android:label="@string/title_activity_detail"
             android:parentActivityName=".ui.GalleryActivity"

@@ -87,48 +87,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fragment_camera2_basic.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="GalleryActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GalleryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.0">
-              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drawer_header.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/drawer_header.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13245033">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.407408">
-              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drawer_content.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/res/menu/drawer_content.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-              <folding />
+            <state vertical-scroll-proportion="0.7261236">
+              <caret line="141" column="53" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4360#4532#0" expanded="true" />
+                <element signature="e#4531#4532#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,15 +104,10 @@
       <file leaf-file-name="Camera2BasicFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/Camera2BasicFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.592592">
-              <caret line="1006" column="53" selection-start-line="1006" selection-start-column="53" selection-end-line="1006" selection-end-column="53" />
+            <state vertical-scroll-proportion="-5.3703704">
+              <caret line="1352" column="4" selection-start-line="1352" selection-start-column="4" selection-end-line="1383" selection-end-column="5" />
               <folding>
-                <element signature="e#21032#21070#0" expanded="true" />
-                <element signature="e#26647#26679#0" expanded="true" />
-                <element signature="e#47086#47113#0" expanded="true" />
-                <element signature="e#49781#49819#0" expanded="true" />
-                <element signature="e#52265#53192#0" expanded="true" />
-                <element signature="e#53191#53192#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -662,14 +625,14 @@
                 <option name="name" value="prepareComAfollestadMaterialDialogsCore0901Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:animated-vector-drawable:24.2.0" />
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2420Library" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:appcompat-v7:24.2.0" />
+                <option name="description" value="Prepare com.android.support:appcompat-v7:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportAppcompatV72420Library" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:cardview-v7:23.3.0" />
@@ -677,39 +640,14 @@
                 <option name="name" value="prepareComAndroidSupportCardviewV72330Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:design:24.2.0" />
+                <option name="description" value="Prepare com.android.support:design:23.3.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportDesign2420Library" />
+                <option name="name" value="prepareComAndroidSupportDesign2330Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.2.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportRecyclerviewV72420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-compat:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportCompat2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-core-ui:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportCoreUi2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-core-utils:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportCoreUtils2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-fragment:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportFragment2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-media-compat:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportMediaCompat2420Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-v13:23.3.0" />
@@ -717,14 +655,14 @@
                 <option name="name" value="prepareComAndroidSupportSupportV132330Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:24.2.0" />
+                <option name="description" value="Prepare com.android.support:support-v4:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42420Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-vector-drawable:24.2.0" />
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2420Library" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-auth:9.4.0" />
@@ -810,26 +748,6 @@
                 <option name="description" value="Prepare com.google.firebase:firebase-storage-common:9.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComGoogleFirebaseFirebaseStorageCommon940Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:fastadapter:1.8.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComMikepenzFastadapter180Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:iconics-core:2.8.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComMikepenzIconicsCore280Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:materialdrawer:5.6.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComMikepenzMaterialdrawer560Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:materialize:1.0.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComMikepenzMaterialize100Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1453,14 +1371,14 @@
                 <option name="name" value="prepareComAfollestadMaterialDialogsCore0901Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:animated-vector-drawable:24.2.0" />
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2420Library" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:appcompat-v7:24.2.0" />
+                <option name="description" value="Prepare com.android.support:appcompat-v7:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportAppcompatV72420Library" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:cardview-v7:23.3.0" />
@@ -1468,39 +1386,14 @@
                 <option name="name" value="prepareComAndroidSupportCardviewV72330Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:design:24.2.0" />
+                <option name="description" value="Prepare com.android.support:design:23.3.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportDesign2420Library" />
+                <option name="name" value="prepareComAndroidSupportDesign2330Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.2.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportRecyclerviewV72420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-compat:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportSupportCompat2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-core-ui:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportSupportCoreUi2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-core-utils:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportSupportCoreUtils2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-fragment:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportSupportFragment2420Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-media-compat:24.2.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportSupportMediaCompat2420Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-v13:23.3.0" />
@@ -1508,14 +1401,14 @@
                 <option name="name" value="prepareComAndroidSupportSupportV132330Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:24.2.0" />
+                <option name="description" value="Prepare com.android.support:support-v4:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportSupportV42420Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-vector-drawable:24.2.0" />
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:24.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2420Library" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-auth:9.4.0" />
@@ -1601,26 +1494,6 @@
                 <option name="description" value="Prepare com.google.firebase:firebase-storage-common:9.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
                 <option name="name" value="prepareComGoogleFirebaseFirebaseStorageCommon940Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:fastadapter:1.8.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComMikepenzFastadapter180Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:iconics-core:2.8.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComMikepenzIconicsCore280Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:materialdrawer:5.6.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComMikepenzMaterialdrawer560Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.mikepenz:materialize:1.0.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
-                <option name="name" value="prepareComMikepenzMaterialize100Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Application" />
@@ -1818,7 +1691,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4407704556000" />
+        <entry key="$PROJECT_DIR$" value="4407786959000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2054,6 +1927,7 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.jar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v13/23.3.0/support-v13-23.3.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/cardview-v7/23.3.0/cardview-v7-23.3.0.aar" />
+                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/design/23.3.0/design-23.3.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/firebase/firebase-auth/9.4.0/firebase-auth-9.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/firebase/firebase-core/9.4.0/firebase-core-9.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-auth/9.4.0/play-services-auth-9.4.0.aar" />
@@ -2062,7 +1936,6 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad.material-dialogs/core/0.9.0.1/3b6d042d3b8051f380d6f00e46d29bb53e863e8/core-0.9.0.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.zhanghai.android.materialprogressbar/library/1.1.7/db5f3631badb6c0cabd6ec2be7f717c2f979dbb5/library-1.1.7.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/materialdrawer/5.6.0/5761040bff7f859a249c33d1b7a253629a7c204b/materialdrawer-5.6.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-base/9.4.0/play-services-base-9.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-basement/9.4.0/play-services-basement-9.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/firebase/firebase-auth-common/9.4.0/firebase-auth-common-9.4.0.aar" />
@@ -2073,23 +1946,14 @@
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-auth-base/9.4.0/play-services-auth-base-9.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/firebase/firebase-storage-common/9.4.0/firebase-storage-common-9.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/firebase/firebase-database-connection/9.4.0/firebase-database-connection-9.4.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/materialize/1.0.0/bcca540655268d32fbd605c9b2736ca0ddd0e3e6/materialize-1.0.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/iconics-core/2.8.0/2df200434e51b9792b3bd8fa46000eccc494d3ee/iconics-core-2.8.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/fastadapter/1.8.0/3b05a4949f12185549003b8613fde39364b67cb1/fastadapter-1.8.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/firebase/firebase-analytics-impl/9.4.0/firebase-analytics-impl-9.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/firebase/firebase-iid/9.4.0/firebase-iid-9.4.0.aar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/24.2.0/recyclerview-v7-24.2.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-compat/24.2.0/a837404f28f101f2916aa9aa52ee69f66ea3896a/support-compat-24.2.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-ui/24.2.0/d86b936e8785254b2dd0bd75216bd3093b547a87/support-core-ui-24.2.0.aar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/24.2.0/appcompat-v7-24.2.0.aar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/design/24.2.0/design-24.2.0.aar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/24.2.0/support-vector-drawable-24.2.0.aar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/24.2.0/animated-vector-drawable-24.2.0.aar" />
-                            <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/24.2.0/support-v4-24.2.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-utils/24.2.0/221d118dd4764d3bb968ac463e52f5d6627dd663/support-core-utils-24.2.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-media-compat/24.2.0/8a3ea4e6733e4481608c88887b8a75c29491524b/support-media-compat-24.2.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/24.2.0/a0d92cf8eedde2315aef4c6af6b7238690d9b461/support-fragment-24.2.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/24.1.1/eb14224a80834c4eb124970a12e3e46d0a5d20f2/recyclerview-v7-24.1.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/24.1.1/57c006a017aa2cbe3d32511e5ac28ee76cf9f51b/support-v4-24.1.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/24.1.1/bb70822533bcab50a2d6b5efc0fcc0647dc7e418/appcompat-v7-24.1.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.1.1/3af19f153122737b372622fa6c81dd11a1c6b999/support-annotations-24.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/animated-vector-drawable/24.1.1/c845ec3f9011c89f7159d35345810788d746c8db/animated-vector-drawable-24.1.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-vector-drawable/24.1.1/19866ce520d61d4f001aa4c57a8cad3f483b54c5/support-vector-drawable-24.1.1.aar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/Application" />
@@ -2255,32 +2119,32 @@
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/util/OnSwipeTouchListener.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/transition/detail_slide.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/util/Util.java" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/menu/menu.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java" />
-        <option value="$PROJECT_DIR$/Application/build.gradle" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_create_account.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_get_started.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/transition/slide_right.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/transition/fade_in.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/transition/fade_out.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/CreateAccountActivity.java" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/transition/slide_left.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_detail.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_gallery.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GalleryActivity.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/transition/activity_fade.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/CameraActivity.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/menu/drawer_content.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/Camera2BasicFragment.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/xml/drawer_item_color.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/xml/drawer_header.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/drawer_header.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/Camera2BasicFragment.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/CreateAccountActivity.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/transition/slide_left.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/transition/slide_right.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_gallery.xml" />
+        <option value="$PROJECT_DIR$/Application/build.gradle" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GalleryActivity.java" />
       </list>
     </option>
   </component>
@@ -2299,8 +2163,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="716" />
+    <option name="width" value="1883" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2335,110 +2199,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Gradle Scripts" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-Camera2Basic-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-Camera2Basic-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-Camera2Basic-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-Camera2Basic-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-Camera2Basic-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camera2basic" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-Camera2Basic-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camera2basic" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2708,40 +2468,40 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="716" extended-state="6" />
+    <frame x="0" y="23" width="1883" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12" sideWeight="0.49613154" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08" sideWeight="0.5048465" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="399" y="297" width="481" height="175" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15" sideWeight="0.4951535" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3101777" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14252608" sideWeight="0.4951535" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12" sideWeight="0.49613154" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="399" y="297" width="481" height="175" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31015754" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.036666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17252931" sideWeight="0.50386846" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1736672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11678436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2853,13 +2613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/MenuElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6983806">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/drawable-xxhdpi/camera.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2872,35 +2625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_menu.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11963882">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/adapter/GalleryAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03177966">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/MenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/adapter/MenuAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.375">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -2943,21 +2671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12529834">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_usage.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2987,22 +2700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-45.517242">
           <caret line="88" column="53" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/UsageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7533461">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0114722">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3048,14 +2745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/transition/slide_right.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17175573">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_detail.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -3063,22 +2752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18181819">
           <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/CreateAccountActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6278626">
-          <caret line="99" column="80" selection-start-line="99" selection-start-column="80" selection-end-line="99" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/transition/slide_left.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14312977">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -3099,25 +2772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4522901">
-          <caret line="135" column="89" selection-start-line="135" selection-start-column="89" selection-end-line="135" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_gallery.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09090909">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/transition/activity_fade.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.114503816">
@@ -3134,32 +2788,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GalleryActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.93360996">
-          <caret line="392" column="9" selection-start-line="392" selection-start-column="9" selection-end-line="392" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/Camera2BasicFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.592592">
-          <caret line="1006" column="53" selection-start-line="1006" selection-start-column="53" selection-end-line="1006" selection-end-column="53" />
-          <folding>
-            <element signature="e#21032#21070#0" expanded="true" />
-            <element signature="e#26647#26679#0" expanded="true" />
-            <element signature="e#47086#47113#0" expanded="true" />
-            <element signature="e#49781#49819#0" expanded="true" />
-            <element signature="e#52265#53192#0" expanded="true" />
-            <element signature="e#53191#53192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.407408">
+        <state vertical-scroll-proportion="0.7956044">
           <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
           <folding />
         </state>
@@ -3167,19 +2798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/menu/drawer_content.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.031120332">
           <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -3189,9 +2809,146 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13245033">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.23178808">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/MenuElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8910891">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/adapter/MenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.28">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/UsageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/CreateAccountActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.022321">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10361446">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/transition/slide_right.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06232687">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/transition/slide_left.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06232687">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29085872">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5014#5448#0" expanded="true" />
+            <element signature="e#5277#5314#0" expanded="true" />
+            <element signature="e#5447#5448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_gallery.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17316018">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#1895#1921#0" expanded="true" />
+            <element signature="e#2350#2376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6103896">
+          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2963483">
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/Camera2BasicFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3703704">
+          <caret line="1352" column="4" selection-start-line="1352" selection-start-column="4" selection-end-line="1383" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GalleryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7261236">
+          <caret line="141" column="53" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4360#4532#0" expanded="true" />
+            <element signature="e#4531#4532#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

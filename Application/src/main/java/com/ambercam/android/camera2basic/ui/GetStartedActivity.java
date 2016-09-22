@@ -152,18 +152,16 @@ public class GetStartedActivity extends Activity {
                                     CameraActivity.class);
                             startActivity(cameraIntent);
                         }
-
-                        if(!task.isSuccessful()){
-                            Toast.makeText(getApplicationContext(),
-                                    getResources().getString(R.string.authentication_failed),
-                                    Toast.LENGTH_LONG).show();
-                        }
                     }
                 })
                 .addOnFailureListener(this, new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         e.printStackTrace();
+                        Toast.makeText(getApplicationContext(),
+                                getString(R.string.get_started_error),
+                                Toast.LENGTH_SHORT)
+                                .show();
                     }
                 });
     }

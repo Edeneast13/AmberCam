@@ -18,7 +18,6 @@ package com.ambercam.android.camera2basic.ui;
 
 import android.Manifest;
 import android.app.Activity;
-import android.app.ActivityOptions;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -83,11 +82,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.mikepenz.materialdrawer.Drawer;
 
 import java.io.File;
 import java.io.FileOutputStream;

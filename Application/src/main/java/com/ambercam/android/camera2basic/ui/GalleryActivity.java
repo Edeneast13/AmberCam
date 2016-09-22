@@ -5,10 +5,12 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.transition.Explode;
-import android.transition.Transition;
-import android.transition.TransitionInflater;
+import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -26,13 +28,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.mikepenz.materialdrawer.AccountHeader;
-import com.mikepenz.materialdrawer.AccountHeaderBuilder;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -51,7 +46,8 @@ public class GalleryActivity extends AppCompatActivity {
     private ArrayList<String> mFirebaseDataList = new ArrayList<String>();
     private ArrayList<String> mImageUrlList = new ArrayList<>();
     private GridView mGalleryGridView;
-    private Drawer mDrawer;
+    private NavigationView mNavigationView;
+    private DrawerLayout mDrawerLayout;
 
     /**
      * Life Cycle methods
@@ -65,6 +61,8 @@ public class GalleryActivity extends AppCompatActivity {
         if(savedInstanceState == null){
             initializeViews();
 
+            setDrawerLayout(mNavigationView);
+
             mAuth = FirebaseAuth.getInstance();
 
             //firebase listeners
@@ -74,8 +72,6 @@ public class GalleryActivity extends AppCompatActivity {
             setCameraButtonListener();
             setMenuButtonListener();
             setGalleryGridViewListener();
-
-            setNavDrawer();
         }
     }
 
@@ -117,14 +113,9 @@ public class GalleryActivity extends AppCompatActivity {
     public void initializeViews(){
         mCameraButton = (ImageButton)findViewById(R.id.gallery_picture);
         mMenuButton = (ImageButton)findViewById(R.id.gallery_menu);
-        mGalleryGridView = (GridView)findViewById(R.id.gallery_gridview);
-    }
-
-    /**
-     * sets the navigation drawer for the activity
-     */
-    public void setNavDrawer(){
-        mDrawer = getNavDrawer();
+        mGalleryGridView = (GridView) findViewById(R.id.gallery_gridview);
+        mNavigationView = (NavigationView)findViewById(R.id.gallery_nav_view);
+        mDrawerLayout = (DrawerLayout)findViewById(R.id.gallery_drawer_layout);
     }
 
     /**
@@ -148,7 +139,7 @@ public class GalleryActivity extends AppCompatActivity {
         mMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDrawer.openDrawer();
+                mDrawerLayout.openDrawer(Gravity.LEFT);
             }
         });
     }
@@ -433,100 +424,35 @@ public class GalleryActivity extends AppCompatActivity {
     }
 
     /**
-     * sets the nav drawer behavior
+     * set listener for nav drawer items
      */
-    public Drawer getNavDrawer(){
-
-        new DrawerBuilder().withActivity(this).build();
-
-        //set the nav drawer elements
-        PrimaryDrawerItem cloudUsageItem = new PrimaryDrawerItem()
-                .withIdentifier(1)
-                .withName(getString(R.string.menu_element_usage))
-                .withIcon(R.drawable.ic_cloud_black_48dp);
-
-        PrimaryDrawerItem rateItem = new PrimaryDrawerItem()
-                .withIdentifier(2)
-                .withName(getString(R.string.menu_element_rate_app))
-                .withIcon(R.drawable.ic_star_rate_black_18dp);
-
-        PrimaryDrawerItem feedbackItem = new PrimaryDrawerItem()
-                .withIdentifier(2)
-                .withName(getString(R.string.menu_element_feedback))
-                .withIcon(R.drawable.ic_feedback_black_24dp);
-
-        PrimaryDrawerItem settingsItem = new PrimaryDrawerItem()
-                .withIdentifier(3)
-                .withName(getString(R.string.menu_element_settings))
-                .withIcon(R.drawable.ic_settings_black_24dp);
-
-        PrimaryDrawerItem logoutItem = new PrimaryDrawerItem()
-                .withIdentifier(3)
-                .withName(getString(R.string.menu_element_log_out))
-                .withIcon(R.drawable.ic_power_settings_new_black_24dp);
-
-        //create the drawer
-        Drawer result = new DrawerBuilder()
-                .withActivity(this)
-                .withAccountHeader(setNavDrawerHeader())
-                .addDrawerItems(cloudUsageItem,
-                        new DividerDrawerItem(),
-                        feedbackItem,
-                        rateItem,
-                        new DividerDrawerItem(),
-                        settingsItem,
-                        logoutItem)
-                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                    @Override
-                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        switch (position) {
-                            case 0: {
-                                break;
-                            }
-                            case 1: {
-                                cloudUsageIntent();
-                                break;
-                            }
-                            case 2: {
-                                break;
-                            }
-                            case 3: {
-                                sendFeedBack();
-                                break;
-                            }
-                            case 4: {
-                                //openPlayStore();
-                                break;
-                            }
-                            case 5: {
-                                break;
-                            }
-                            case 6: {
-                                //TODO: settings intent
-                                break;
-                            }
-                            case 7: {
-                                logOut();
-                                break;
-                            }
-                        }
-                        return true;
+    public void setDrawerLayout(NavigationView navigationView){
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_cloud_usage: {
+                        cloudUsageIntent();
+                        break;
                     }
-                })
-                .build();
-
-        return result;
-    }
-
-    /**
-     * sets the header image for the nav drawer
-     */
-    public AccountHeader setNavDrawerHeader(){
-        AccountHeader headerResult = new AccountHeaderBuilder()
-                .withActivity(this)
-                .withHeaderBackground(R.drawable.fall_camera)
-                .build();
-
-        return headerResult;
+                    case R.id.menu_feedback: {
+                        sendFeedBack();
+                        break;
+                    }
+                    case R.id.menu_rate: {
+                        //openPlayStore();
+                        break;
+                    }
+                    case R.id.menu_settings: {
+                        break;
+                    }
+                    case R.id.menu_logout: {
+                        logOut();
+                        break;
+                    }
+                }
+                return true;
+            }
+        });
     }
 }

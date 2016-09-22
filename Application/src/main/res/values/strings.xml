@@ -26,16 +26,19 @@
     <string name="get_started_password">password</string>
     <string name="get_started_login">login</string>
     <string name="get_started_create">No account yet? Join us now!</string>
+    <string name="get_started_error">Incorrect username or password</string>
+
     <string name="create_account_create">Join Us!</string>
     <string name="create_account_confirm_email">confirm email</string>
     <string name="create_account_confirm_password">confirm password</string>
-    <string name="title_activity_create_account">CreateAccountActivity</string>
 
     <string name="email_no_match">emails do not match</string>
     <string name="password_no_match">passwords do not match</string>
 
     <string name="authentication_success">Success!</string>
     <string name="authentication_failed">Authentication Failed</string>
+
+    <string name="title_activity_create_account">CreateAccountActivity</string>
     <string name="title_activity_gallery">GalleryActivity</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_activity_detail">DetailActivity</string>
