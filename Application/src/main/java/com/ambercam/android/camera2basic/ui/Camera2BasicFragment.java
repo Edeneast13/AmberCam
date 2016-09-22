@@ -1339,6 +1339,7 @@ public class Camera2BasicFragment extends Fragment
     public void cloudUsageIntent() {
         Intent usageIntent = new Intent(getActivity(), UsageActivity.class);
         startActivity(usageIntent);
+        getActivity().overridePendingTransition(R.transition.fade_in,R.transition.fade_out);
     }
 
     /**

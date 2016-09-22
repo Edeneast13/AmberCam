@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.ambercam.android.camera2basic.ui.UsageActivity"
-    android:background="@color/divider">
+    android:background="@color/base_background">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/usage_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/primary"
+        android:background="@xml/cloud_usage_toolbar"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
@@ -25,100 +25,83 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="63dp"
             android:elevation="2dp"
             android:id="@+id/image_surface">
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cloud_percent"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:id="@+id/usage_percent_text"
-                    android:layout_gravity="center"
-                    android:textSize="22sp"
-                    android:fontFamily="sans-serif"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"/>
-
-            </FrameLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:elevation="2dp"
-            android:id="@+id/progress_surface"
-            android:layout_below="@+id/image_surface"
-            >
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:gravity="center">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:textColor="@color/primary_text"
-                    android:text="1/100"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="20sp"
-                    android:id="@+id/usage_text"/>
-
-                <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    app:mpb_progressStyle="horizontal"
-                    style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
-                    android:backgroundTint="@color/accent"
-                    android:id="@+id/usage_progress_bar"/>
+                    android:layout_height="220dp"
+                    android:background="@drawable/cloud_header"
+                    android:orientation="vertical"
+                    android:id="@+id/header">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:id="@+id/usage_percent_text"
+                        android:layout_gravity="center"
+                        android:textSize="45sp"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="140dp"
+                        android:textColor="@color/primary_dark"
+                        android:textStyle="bold"/>
 
-        </android.support.v7.widget.CardView>
+                </LinearLayout>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/progress_surface"
-            android:layout_marginTop="8dp"
-            android:elevation="2dp"
-            android:id="@+id/purchase_surface">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Purchase more storage"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="20sp"
-                    android:padding="16dp"/>
-
-                <android.support.v7.widget.RecyclerView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp">
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_below="@+id/header">
 
-                </android.support.v7.widget.RecyclerView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
 
-            </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/usage_user_text"
+                            android:gravity="left"
+                            android:text="parkwaydrive631@yahoo.com"
+                            android:textColor="@color/primary_text"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:textColor="@color/primary_text"
+                            android:text="1/100"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="20sp"
+                            android:id="@+id/usage_text"/>
+
+                    </LinearLayout>
+
+                    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        app:mpb_progressStyle="horizontal"
+                        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+                        android:backgroundTint="@color/accent"
+                        android:id="@+id/usage_progress_bar"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
 
         </android.support.v7.widget.CardView>
 

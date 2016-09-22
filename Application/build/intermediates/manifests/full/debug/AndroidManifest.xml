@@ -80,8 +80,8 @@
         <activity
             android:name="com.ambercam.android.camera2basic.ui.UsageActivity"
             android:label="@string/title_activity_usage"
-            android:parentActivityName="com.ambercam.android.camera2basic.ui.MenuActivity"
-            android:theme="@style/AmberMaterial" >
+            android:parentActivityName="com.ambercam.android.camera2basic.ui.CameraActivity"
+            android:theme="@style/CloudUsageAmberMaterial" >
         </activity>
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

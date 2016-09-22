@@ -412,6 +412,7 @@ public class GalleryActivity extends AppCompatActivity {
     public void cloudUsageIntent() {
         Intent usageIntent = new Intent(getApplicationContext(), UsageActivity.class);
         startActivity(usageIntent);
+        overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
     }
 
     /**

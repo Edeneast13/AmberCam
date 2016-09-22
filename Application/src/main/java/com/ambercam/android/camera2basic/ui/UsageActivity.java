@@ -27,8 +27,7 @@ public class UsageActivity extends AppCompatActivity {
     private MaterialProgressBar mUsageProgessBar;
     private TextView mUsagePercentTextView;
     private CardView mCloudCardView;
-    private CardView mProgressCardView;
-    private CardView mPurchaseCardView;
+    private TextView mUserNameTextView;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -74,8 +73,7 @@ public class UsageActivity extends AppCompatActivity {
         mUsageProgessBar = (MaterialProgressBar)findViewById(R.id.usage_progress_bar);
         mUsagePercentTextView = (TextView)findViewById(R.id.usage_percent_text);
         mCloudCardView = (CardView)findViewById(R.id.image_surface);
-        mProgressCardView = (CardView)findViewById(R.id.progress_surface);
-        mPurchaseCardView = (CardView)findViewById(R.id.purchase_surface);
+        mUserNameTextView = (TextView)findViewById(R.id.usage_user_text);
     }
 
     /**
@@ -85,7 +83,7 @@ public class UsageActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(getString(R.string.app_title));
+        getSupportActionBar().setTitle("");
     }
 
     /**
@@ -105,6 +103,7 @@ public class UsageActivity extends AppCompatActivity {
                             .child(Util.returnSplitEmail(firebaseUser.getEmail().toString()) + "_count");
 
                     setChildEventListener(mDatabaseReference, mChildEventListener);
+                    setUserNameTextView();
                 }
             }
         };
@@ -168,8 +167,10 @@ public class UsageActivity extends AppCompatActivity {
     }
 
     public void setCardBackgroundColors(){
-        mPurchaseCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
-        mProgressCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
         mCloudCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
+    }
+
+    public void setUserNameTextView(){
+        mUserNameTextView.setText(mActiveUser.getEmail().toString());
     }
 }

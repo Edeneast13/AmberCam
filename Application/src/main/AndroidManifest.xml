@@ -66,8 +66,8 @@
         <activity
             android:name=".ui.UsageActivity"
             android:label="@string/title_activity_usage"
-            android:theme="@style/AmberMaterial"
-            android:parentActivityName=".ui.MenuActivity">
+            android:theme="@style/CloudUsageAmberMaterial"
+            android:parentActivityName=".ui.CameraActivity">
         </activity>
     </application>
 

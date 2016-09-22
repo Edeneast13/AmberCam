@@ -301,9 +301,9 @@ ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/s
 	android:label
 		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:68:13-57
 	android:parentActivityName
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:70:13-58
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:70:13-60
 	android:theme
-		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:69:13-49
+		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:69:13-59
 	android:name
 		ADDED from /Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:67:13-45
 uses-sdk
