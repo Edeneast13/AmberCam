@@ -23,6 +23,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -50,12 +51,16 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v13.app.FragmentCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
+import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
@@ -114,7 +119,8 @@ public class Camera2BasicFragment extends Fragment
     private ChildEventListener mChildEventListener;
     private ImageButton mGalleryButton;
     private CountData mCountData;
-    private Drawer mDrawer;
+    private NavigationView mNavigationView;
+    private DrawerLayout mDrawerLayout;
 
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
@@ -497,6 +503,10 @@ public class Camera2BasicFragment extends Fragment
 
         View root = inflater.inflate(R.layout.fragment_camera2_basic, container, false);
         mGalleryButton = (ImageButton)root.findViewById(R.id.cloud_gallery);
+        mNavigationView = (NavigationView)root.findViewById(R.id.camera_nav_view);
+        mDrawerLayout = (DrawerLayout)root.findViewById(R.id.camera_drawer_layout);
+
+        setDrawerLayout(mNavigationView);
 
         mAuth = FirebaseAuth.getInstance();
         mFirebaseStorage = FirebaseStorage.getInstance();
@@ -994,8 +1004,7 @@ public class Camera2BasicFragment extends Fragment
                 break;
             }
             case R.id.info: {
-                Intent menuIntent = new Intent(getActivity(), MenuActivity.class);
-                startActivity(menuIntent);
+                mDrawerLayout.openDrawer(Gravity.LEFT);
                 break;
             }
         }
@@ -1283,5 +1292,97 @@ public class Camera2BasicFragment extends Fragment
                 Toast.LENGTH_LONG).show();
         Intent fullStorageIntent = new Intent(getActivity(), UsageActivity.class);
         startActivity(fullStorageIntent);
+    }
+
+    /**
+     * methods for nav drawer
+     */
+
+    /**
+     * opens the play store using an intent so users can rate the app
+     */
+    public void openPlayStore(){
+        Uri uri = Uri.parse("market://details?id=" + getActivity().getPackageName());
+        Intent playStoreIntent = new Intent(Intent.ACTION_VIEW, uri);
+
+        //allows for us to return to app from play store using back button
+        playStoreIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+
+        try{
+            startActivity(playStoreIntent);
+        }
+        catch (ActivityNotFoundException e){
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("market://details?id=" + getActivity().getPackageName())));
+        }
+    }
+
+    /**
+     * allows the user to chose there favorite email app and send feedback to the development team
+     */
+    public void sendFeedBack(){
+        Intent feedbackIntent = new Intent(Intent.ACTION_SENDTO);
+        String uriText = "mailto:" + Uri.encode("appdevbri@gmail.com") +
+                "?subject=" + Uri.encode("AmberCam Feedback");
+
+        Uri uri = Uri.parse(uriText);
+        feedbackIntent.setData(uri);
+
+        //allows for us to return to app from play store using back button
+        feedbackIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+
+        startActivity(Intent.createChooser(feedbackIntent, "Send mail......"));
+    }
+
+    /**
+     * opens the cloud usage activity
+     */
+    public void cloudUsageIntent() {
+        Intent usageIntent = new Intent(getActivity(), UsageActivity.class);
+        startActivity(usageIntent);
+    }
+
+    /**
+     * logs the user out of firebase and returns the user to the get started activity
+     */
+    public void logOut(){
+        FirebaseAuth.getInstance().signOut();
+        Intent logoutActivity = new Intent(getActivity(), GetStartedActivity.class);
+        startActivity(logoutActivity);
+    }
+
+    /**
+     * set listener for nav drawer items
+     */
+    public void setDrawerLayout(NavigationView navigationView){
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.menu_cloud_usage: {
+                        cloudUsageIntent();
+                        break;
+                    }
+                    case R.id.menu_feedback: {
+                        sendFeedBack();
+                        break;
+                    }
+                    case R.id.menu_rate: {
+                        //openPlayStore();
+                        break;
+                    }
+                    case R.id.menu_settings: {
+                        break;
+                    }
+                    case R.id.menu_logout: {
+                        logOut();
+                        break;
+                    }
+                }
+                return true;
+            }
+        });
     }
 }

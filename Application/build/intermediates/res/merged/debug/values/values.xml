@@ -1003,6 +1003,7 @@
 
            <item name="android:windowContentTransitions">true</item>
            <item name="android:windowEnterTransition">@transition/gallery_enter</item>
+        <item name="android:listDivider">@color/divider</item>
     </style>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
