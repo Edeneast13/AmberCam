@@ -50,6 +50,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v13.app.FragmentCompat;
 import android.support.v4.content.ContextCompat;
@@ -118,6 +119,7 @@ public class Camera2BasicFragment extends Fragment
     private CountData mCountData;
     private NavigationView mNavigationView;
     private DrawerLayout mDrawerLayout;
+    private FloatingActionButton mCameraChangeFab;
 
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
@@ -502,6 +504,7 @@ public class Camera2BasicFragment extends Fragment
         mGalleryButton = (ImageButton)root.findViewById(R.id.cloud_gallery);
         mNavigationView = (NavigationView)root.findViewById(R.id.camera_nav_view);
         mDrawerLayout = (DrawerLayout)root.findViewById(R.id.camera_drawer_layout);
+        mCameraChangeFab = (FloatingActionButton)root.findViewById(R.id.camera_change_fab);
 
         setDrawerLayout(mNavigationView);
 

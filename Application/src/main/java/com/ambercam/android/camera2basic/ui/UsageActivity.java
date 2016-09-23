@@ -152,24 +152,30 @@ public class UsageActivity extends AppCompatActivity {
     }
 
     /**
-     * set the values for the count textview
+     * set the values for the count textView
      */
     public void setUsageTextViewText(int max, int count){
         mUsageTextView.setText(count + "/" + max);
     }
 
     /**
-     * sets the value for the percent textview
+     * sets the value for the percent textView
      */
     public void setCloudPercentText(int max, int count){
         int percentUsed = ((count*100)/max);
         mUsagePercentTextView.setText(percentUsed + "%");
     }
 
+    /**
+     * sets card color background
+     */
     public void setCardBackgroundColors(){
         mCloudCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
     }
 
+    /**
+     * sets text for user name textView
+     */
     public void setUserNameTextView(){
         mUserNameTextView.setText(mActiveUser.getEmail().toString());
     }

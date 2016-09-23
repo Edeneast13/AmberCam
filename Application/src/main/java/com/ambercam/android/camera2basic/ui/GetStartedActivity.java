@@ -1,5 +1,7 @@
 package com.ambercam.android.camera2basic.ui;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
@@ -8,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +34,8 @@ public class GetStartedActivity extends Activity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private TextView mCreateTextView;
+    private ImageView mIconImageView;
+    private TextView mTitleTextView;
 
     /**
      * LIFE CYCLE methods
@@ -41,6 +46,7 @@ public class GetStartedActivity extends Activity {
         setContentView(R.layout.activity_get_started);
 
         initializeViews();
+        setViewTransitionAnimations();
 
         mAuth = FirebaseAuth.getInstance();
         setFirebaseAuthListener();
@@ -77,6 +83,8 @@ public class GetStartedActivity extends Activity {
         mPasswordEditText = (EditText)findViewById(R.id.get_started_password);
         mLoginButton = (Button)findViewById(R.id.get_started_login);
         mCreateTextView = (TextView)findViewById(R.id.get_started_create);
+        mTitleTextView = (TextView)findViewById(R.id.get_started_title);
+        mIconImageView = (ImageView)findViewById(R.id.get_started_icon);
     }
 
     /**
@@ -178,6 +186,26 @@ public class GetStartedActivity extends Activity {
                 overridePendingTransition(R.transition.slide_right, R.transition.fade_out);
             }
         });
+    }
+
+    public void setViewTransitionAnimations(){
+        ObjectAnimator iconMover = ObjectAnimator.ofFloat(
+                mIconImageView,
+                "translationY",
+                (Util.returnScreenHeight(getApplicationContext())),
+                0f);
+        iconMover.setDuration(700);
+
+        ObjectAnimator titleMover = ObjectAnimator.ofFloat(
+                mTitleTextView,
+                "translationY",
+                (Util.returnScreenHeight(getApplicationContext())),
+                0f);
+        titleMover.setDuration(700);
+
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.play(iconMover).with(titleMover);
+        animatorSet.start();
     }
 }
 
