@@ -56,10 +56,6 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/fall_camera.jpeg",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/drawable-xxxhdpi/fall_camera.jpeg"
-    },
-    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cloud_percent.png",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/drawable-xxxhdpi/cloud_percent.png"
     },
@@ -140,14 +136,6 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_menu_black_24dp.png",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/drawable-xxxhdpi/ic_menu_black_24dp.png"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_photo_black_24dp.png",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/drawable-xxxhdpi/ic_photo_black_24dp.png"
-    },
-    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -158,10 +146,6 @@
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_delete_forever_black_24dp.png",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/drawable-xxxhdpi/ic_delete_forever_black_24dp.png"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_camera_black_24dp.png",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/drawable-xxxhdpi/ic_camera_black_24dp.png"
     },
     {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
