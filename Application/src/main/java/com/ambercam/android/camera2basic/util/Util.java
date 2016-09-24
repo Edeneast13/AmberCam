@@ -7,6 +7,7 @@ import android.net.NetworkInfo;
 import android.util.Patterns;
 import android.view.Display;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 
@@ -77,5 +78,17 @@ public class Util {
     static public String returnSplitEmail(String email){
         String[] splitEmail = email.split("@");
         return splitEmail[0];
+    }
+
+    /**
+     * toast that displays for unfinished features
+     */
+    static public void incompleteToast(Context context){
+        Toast.makeText(context, "This feature isn't finished yet", Toast.LENGTH_SHORT).show();
+    }
+
+    static public void noActiveNetworkToast(Context context){
+        Toast.makeText(context, "There is currently no active network connection."
+                + " AmberCam requires a network connection.", Toast.LENGTH_SHORT).show();
     }
 }

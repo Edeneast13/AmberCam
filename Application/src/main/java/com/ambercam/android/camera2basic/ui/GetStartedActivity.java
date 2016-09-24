@@ -124,7 +124,12 @@ public class GetStartedActivity extends Activity {
             @Override
             public void onClick(View v) {
                 User user = getTextFromViews();
-                loginUserWithFirebase(user, mAuth);
+                if(Util.activeNetworkCheck(getApplicationContext()) == true){
+                    loginUserWithFirebase(user, mAuth);
+                }
+                else{
+                    Util.noActiveNetworkToast(getApplicationContext());
+                }
             }
         });
     }

@@ -442,9 +442,11 @@ public class GalleryActivity extends AppCompatActivity {
                     }
                     case R.id.menu_rate: {
                         //openPlayStore();
+                        Util.incompleteToast(getApplicationContext());
                         break;
                     }
                     case R.id.menu_settings: {
+                        Util.incompleteToast(getApplicationContext());
                         break;
                     }
                     case R.id.menu_logout: {

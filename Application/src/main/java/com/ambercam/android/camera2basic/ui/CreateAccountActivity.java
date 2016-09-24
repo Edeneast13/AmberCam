@@ -223,7 +223,12 @@ public class CreateAccountActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mUser = returnNewUser();
-                createNewUser(mUser, mFirebaseAuth );
+                if(Util.activeNetworkCheck(getApplicationContext()) == true){
+                    createNewUser(mUser, mFirebaseAuth );
+                }
+                else{
+                    Util.noActiveNetworkToast(getApplicationContext());
+                }
             }
         });
     }

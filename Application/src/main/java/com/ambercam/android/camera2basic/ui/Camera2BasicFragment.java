@@ -1116,11 +1116,15 @@ public class Camera2BasicFragment extends Fragment
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.picture: {
-                if(mCountData.getImageCount()<mCountData.getImageMax()){
-                    takePicture();
+                if(Util.activeNetworkCheck(getActivity()) == true) {
+                    if (mCountData.getImageCount() < mCountData.getImageMax()) {
+                        takePicture();
+                    } else {
+                        handleFullStorage();
+                    }
                 }
                 else{
-                    handleFullStorage();
+                    Util.noActiveNetworkToast(getActivity());
                 }
                 break;
             }
@@ -1377,16 +1381,19 @@ public class Camera2BasicFragment extends Fragment
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                //gets the active user
-                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-                if(firebaseUser != null){
-                    mActiveUser = firebaseUser;
-                    mDatabaseReference = FirebaseDatabase
-                            .getInstance()
-                            .getReference()
-                            .child(Util.returnSplitEmail(firebaseUser.getEmail().toString()) + "_count");
-                    setChildEventListener(mDatabaseReference, mChildEventListener);
+                if (Util.activeNetworkCheck(getActivity()) == true) {
+                    //gets the active user
+                    FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                    if (firebaseUser != null) {
+                        mActiveUser = firebaseUser;
+                        mDatabaseReference = FirebaseDatabase
+                                .getInstance()
+                                .getReference()
+                                .child(Util.returnSplitEmail(firebaseUser.getEmail().toString()) + "_count");
+                        setChildEventListener(mDatabaseReference, mChildEventListener);
+                    }
                 }
+                else{Util.noActiveNetworkToast(getActivity());}
             }
         };
     }
@@ -1398,9 +1405,12 @@ public class Camera2BasicFragment extends Fragment
         mGalleryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent galleryIntent = new Intent(getActivity(), GalleryActivity.class);
-                startActivity(galleryIntent);
-                getActivity().overridePendingTransition(R.transition.slide_right, R.transition.fade_out);
+                if (Util.activeNetworkCheck(getActivity()) == true) {
+                    Intent galleryIntent = new Intent(getActivity(), GalleryActivity.class);
+                    startActivity(galleryIntent);
+                    getActivity().overridePendingTransition(R.transition.slide_right, R.transition.fade_out);
+                }
+                else{Util.noActiveNetworkToast(getActivity());}
             }
         });
     }
@@ -1409,10 +1419,13 @@ public class Camera2BasicFragment extends Fragment
      * toast shown to the user when they have reached there storage limit
      */
     public void handleFullStorage(){
-        Toast.makeText(getActivity(), getString(R.string.storage_full_toast),
-                Toast.LENGTH_LONG).show();
-        Intent fullStorageIntent = new Intent(getActivity(), UsageActivity.class);
-        startActivity(fullStorageIntent);
+        if(Util.activeNetworkCheck(getActivity())) {
+            Toast.makeText(getActivity(), getString(R.string.storage_full_toast),
+                    Toast.LENGTH_LONG).show();
+            Intent fullStorageIntent = new Intent(getActivity(), UsageActivity.class);
+            startActivity(fullStorageIntent);
+        }
+        else{Util.noActiveNetworkToast(getActivity());}
     }
 
     /**
@@ -1423,47 +1436,55 @@ public class Camera2BasicFragment extends Fragment
      * opens the play store using an intent so users can rate the app
      */
     public void openPlayStore(){
-        Uri uri = Uri.parse("market://details?id=" + getActivity().getPackageName());
-        Intent playStoreIntent = new Intent(Intent.ACTION_VIEW, uri);
+        if(Util.activeNetworkCheck(getActivity()) == true) {
+            Uri uri = Uri.parse("market://details?id=" + getActivity().getPackageName());
+            Intent playStoreIntent = new Intent(Intent.ACTION_VIEW, uri);
 
-        //allows for us to return to app from play store using back button
-        playStoreIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
-                Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+            //allows for us to return to app from play store using back button
+            playStoreIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                    Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
 
-        try{
-            startActivity(playStoreIntent);
+            try {
+                startActivity(playStoreIntent);
+            } catch (ActivityNotFoundException e) {
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("market://details?id=" + getActivity().getPackageName())));
+            }
         }
-        catch (ActivityNotFoundException e){
-            startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("market://details?id=" + getActivity().getPackageName())));
-        }
+        else{Util.noActiveNetworkToast(getActivity());}
     }
 
     /**
      * allows the user to chose there favorite email app and send feedback to the development team
      */
     public void sendFeedBack(){
-        Intent feedbackIntent = new Intent(Intent.ACTION_SENDTO);
-        String uriText = "mailto:" + Uri.encode("appdevbri@gmail.com") +
-                "?subject=" + Uri.encode("AmberCam Feedback");
+        if(Util.activeNetworkCheck(getActivity()) == true) {
+            Intent feedbackIntent = new Intent(Intent.ACTION_SENDTO);
+            String uriText = "mailto:" + Uri.encode("appdevbri@gmail.com") +
+                    "?subject=" + Uri.encode("AmberCam Feedback");
 
-        Uri uri = Uri.parse(uriText);
-        feedbackIntent.setData(uri);
+            Uri uri = Uri.parse(uriText);
+            feedbackIntent.setData(uri);
 
-        //allows for us to return to app from play store using back button
-        feedbackIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
-                Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+            //allows for us to return to app from play store using back button
+            feedbackIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                    Intent.FLAG_ACTIVITY_NEW_DOCUMENT | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
 
-        startActivity(Intent.createChooser(feedbackIntent, "Send mail......"));
+            startActivity(Intent.createChooser(feedbackIntent, "Send mail......"));
+        }
+        else{Util.noActiveNetworkToast(getActivity());}
     }
 
     /**
      * opens the cloud usage activity
      */
     public void cloudUsageIntent() {
-        Intent usageIntent = new Intent(getActivity(), UsageActivity.class);
-        startActivity(usageIntent);
-        getActivity().overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
+        if(Util.activeNetworkCheck(getActivity()) == true) {
+            Intent usageIntent = new Intent(getActivity(), UsageActivity.class);
+            startActivity(usageIntent);
+            getActivity().overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
+        }
+        else{Util.noActiveNetworkToast(getActivity());}
     }
 
     /**
@@ -1493,9 +1514,11 @@ public class Camera2BasicFragment extends Fragment
                     }
                     case R.id.menu_rate: {
                         //openPlayStore();
+                        Util.incompleteToast(getActivity());
                         break;
                     }
                     case R.id.menu_settings: {
+                        Util.incompleteToast(getActivity());
                         break;
                     }
                     case R.id.menu_logout: {
@@ -1526,6 +1549,9 @@ public class Camera2BasicFragment extends Fragment
         }
     }
 
+    /**
+     * listener for floating action button
+     */
     public void setCameraChangeFabListener(){
         mCameraChangeFab.setOnClickListener(new View.OnClickListener() {
             @Override
