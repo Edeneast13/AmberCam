@@ -35,6 +35,9 @@ android {
         multiDexEnabled true
 
         applicationId "com.ambercam.android.camera2basic"
+
+        versionCode 1
+        versionName "1.0"
     }
 
     signingConfigs {

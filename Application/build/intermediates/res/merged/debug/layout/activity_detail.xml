@@ -9,7 +9,7 @@
     android:background="@color/base_background">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+        android:id="@+id/detail_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/primary"
@@ -20,9 +20,10 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
         android:id="@+id/detail_imageview"
-        android:layout_marginTop="55dp"
-        android:transitionName="image"/>
+        android:transitionName="image"
+        android:layout_marginTop="55dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

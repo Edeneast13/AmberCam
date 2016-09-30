@@ -134,7 +134,7 @@ public class DetailActivity extends AppCompatActivity {
      * initialize all views in activity
      */
     public void initializeViews(){
-        mToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         mDetailImageView = (ImageView)findViewById(R.id.detail_imageview);
         mDetailDeleteButton = (Button)findViewById(R.id.detail_delete_button);
         mRelativeLayout = (RelativeLayout)findViewById(R.id.detail_relative_layout);
@@ -147,7 +147,7 @@ public class DetailActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(getString(R.string.app_title));
+        getSupportActionBar().setTitle("");
     }
 
     /**

@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -79,7 +83,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         mPasswordEditText = (EditText)findViewById(R.id.create_account_password);
         mConfirmPasswordEditText = (EditText)findViewById(R.id.create_account_confirm_password);
         mCreateButton = (Button)findViewById(R.id.create_account_create);
-        mToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.create_toolbar);
     }
 
     /**
@@ -121,15 +125,12 @@ public class CreateAccountActivity extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(Task<AuthResult> task) {
-
                         if(!task.isSuccessful()){
-
                             Toast.makeText(getApplicationContext(),
                                     getResources().getString(R.string.authentication_failed),
                                     Toast.LENGTH_LONG).show();
                         }
                         else{
-
                             Toast.makeText(getApplicationContext(),
                                     getResources().getString(R.string.authentication_success),
                                     Toast.LENGTH_LONG).show();
@@ -172,47 +173,40 @@ public class CreateAccountActivity extends AppCompatActivity {
     /**
      * returns text from views and puts data into new user object
      */
-    public User returnNewUser(){
+    public User returnNewUser() {
 
         User user = new User();
 
         //email tests
-        if(!mEmailEditText.getText().toString()
-                .equals(mConfirmEmailEditText.getText().toString())){
+        if (!mEmailEditText.getText().toString()
+                .equals(mConfirmEmailEditText.getText().toString())) {
             Toast.makeText(getApplicationContext(), "emails do not match",
                     Toast.LENGTH_SHORT).show();
-        }
-        else if(mEmailEditText.getText().toString().equals(null)){
+        } else if (mEmailEditText.getText().toString().equals(null)) {
             Toast.makeText(getApplicationContext(), "Enter a valid email address",
                     Toast.LENGTH_SHORT).show();
-        }
-        else if(!Util.isValidEmail(mEmailEditText.getText().toString())){
+        } else if (!Util.isValidEmail(mEmailEditText.getText().toString())) {
             Toast.makeText(getApplicationContext(), "Enter a valid email address",
                     Toast.LENGTH_SHORT).show();
-        }
-        else{
+        } else {
             user.setEmail(mEmailEditText.getText().toString());
         }
 
         //password tests
-        if(!mPasswordEditText.getText().toString()
-                .equals(mConfirmPasswordEditText.getText().toString())){
+        if (!mPasswordEditText.getText().toString()
+                .equals(mConfirmPasswordEditText.getText().toString())) {
             Toast.makeText(getApplicationContext(), "Passwords do not match",
                     Toast.LENGTH_SHORT).show();
         }
-        else if(mPasswordEditText.getText().toString().length() < 6){
+        else if (mPasswordEditText.getText().toString().length() < 6) {
             Toast.makeText(getApplicationContext(), "Password must be at least 6 characters",
-                    Toast.LENGTH_SHORT).show();
-        }
-        else if(mPasswordEditText.getText().toString().equals(null)){
-            Toast.makeText(getApplicationContext(),"Please enter a valid password",
                     Toast.LENGTH_SHORT).show();
         }
         else{
             user.setPassword(mPasswordEditText.getText().toString());
         }
 
-       return user;
+        return user;
     }
 
     /**
@@ -233,3 +227,4 @@ public class CreateAccountActivity extends AppCompatActivity {
         });
     }
 }
+
