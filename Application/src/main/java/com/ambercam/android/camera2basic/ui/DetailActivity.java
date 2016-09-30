@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -43,6 +44,7 @@ public class DetailActivity extends AppCompatActivity {
     private ImageView mDetailImageView;
     private RelativeLayout mRelativeLayout;
     private Button mDetailDeleteButton;
+    private FloatingActionButton mCameraFab;
     private Toolbar mToolbar;
     private ArrayList<String> mImageUrlList;
     private int mPosition;
@@ -81,6 +83,7 @@ public class DetailActivity extends AppCompatActivity {
         setDetailImageViewLongClickListener();
         setDetailDeleteButtonListener();
         setDetailImageViewSwipeListener();
+        setCameraFabListener();
 
         SplitUrl splitUrl = new SplitUrl(mPosition, mImageUrlList);
         splitUrl.run();
@@ -103,6 +106,28 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     /**
+     * initialize all views in activity
+     */
+    public void initializeViews(){
+        mToolbar = (Toolbar) findViewById(R.id.detail_toolbar);
+        mDetailImageView = (ImageView)findViewById(R.id.detail_imageview);
+        mDetailDeleteButton = (Button)findViewById(R.id.detail_delete_button);
+        mRelativeLayout = (RelativeLayout)findViewById(R.id.detail_relative_layout);
+        mCameraFab = (FloatingActionButton)findViewById(R.id.detail_camera_fab);
+    }
+
+    /**
+     * handles toolbar behavior
+     */
+    public void initializeToolbarBehavior(Toolbar toolbar){
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setLogo(R.drawable.ambercam_title);
+    }
+
+    /**
      * menu methods
      */
     @Override
@@ -119,35 +144,23 @@ public class DetailActivity extends AppCompatActivity {
                 //if delete button is already visible it is hidden
                 if(mRelativeLayout.getVisibility() == View.VISIBLE){
                     mRelativeLayout.setVisibility(View.GONE);
+                    mCameraFab.setVisibility(View.VISIBLE);
                 }
                 else{
                     //if button is not visible it is shown
                     mRelativeLayout.setVisibility(View.VISIBLE);
                     setDeviceVibration();
+                    mCameraFab.setVisibility(View.GONE);
                 }
+                break;
+            }
+            case R.id.share:{
+                shareImage();
+                break;
             }
             default: return super.onOptionsItemSelected(item);
         }
-    }
-
-    /**
-     * initialize all views in activity
-     */
-    public void initializeViews(){
-        mToolbar = (Toolbar) findViewById(R.id.detail_toolbar);
-        mDetailImageView = (ImageView)findViewById(R.id.detail_imageview);
-        mDetailDeleteButton = (Button)findViewById(R.id.detail_delete_button);
-        mRelativeLayout = (RelativeLayout)findViewById(R.id.detail_relative_layout);
-    }
-
-    /**
-     * handles toolbar behavior
-     */
-    public void initializeToolbarBehavior(Toolbar toolbar){
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("");
+        return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -237,6 +250,17 @@ public class DetailActivity extends AppCompatActivity {
                         mDetailImageView,
                         SWIPEDIRECTIONRIGHT);
                 setSlide.run();
+            }
+        });
+    }
+
+    public void setCameraFabListener() {
+        mCameraFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cameraIntent = new Intent(getApplicationContext(), CameraActivity.class);
+                startActivity(cameraIntent);
+                overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
             }
         });
     }
@@ -386,13 +410,15 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     /**
-     * sign the user out of the app and return to get started activity
+     * share image url using intent
      */
-    public void logOut(){
-        FirebaseAuth.getInstance().signOut();
-        Intent logoutActivity = new Intent(getApplicationContext(), GetStartedActivity.class);
-        logoutActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(logoutActivity);
+    public void shareImage(){
+        String url = mImageUrlList.get(mPosition);
+        Log.i("Url: ", url);
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, url);
+        startActivity(Intent.createChooser(shareIntent, "Share using"));
     }
 
     /**

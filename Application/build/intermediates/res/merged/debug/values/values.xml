@@ -457,10 +457,17 @@
     <string name="create_account_confirm_password">confirm password</string>
     <string name="create_account_create">Join Us!</string>
     <string name="default_web_client_id" translatable="false">388833893683-b6tpbp87ejfiitkvgfroiou70a7ij3lv.apps.googleusercontent.com</string>
+    <string name="description_camera_button">Camera Button</string>
+    <string name="description_camera_preview">Camera Preview</string>
+    <string name="description_camera_switch_button">Switch Cameras</string>
+    <string name="description_gallery_button">Gallery Button</string>
+    <string name="description_image_detail">Gallery Image Detail</string>
     <string name="description_info">Info</string>
+    <string name="description_nav_button">Navigation Button</string>
     <string name="detail_delete_failed_toast">Deletion Failed</string>
     <string name="detail_delete_success_toast">Image Deleted</string>
     <string name="detail_delete_text">Delete</string>
+    <string name="detail_share_text">Share</string>
     <string name="drawer_closed">Drawer Closed</string>
     <string name="drawer_open">Drawer Open</string>
     <string name="email_no_match">emails do not match</string>

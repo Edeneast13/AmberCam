@@ -46,7 +46,7 @@
                         android:id="@+id/usage_percent_text"
                         android:layout_gravity="center"
                         android:textSize="45sp"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="sans-serif-thin"
                         android:layout_marginTop="140dp"
                         android:textColor="@color/primary_dark"
                         android:textStyle="bold"/>
@@ -73,7 +73,7 @@
                             android:gravity="left"
                             android:text="parkwaydrive631@yahoo.com"
                             android:textColor="@color/primary_text"
-                            android:fontFamily="sans-serif-light"
+                            android:fontFamily="sans-serif-condensed-light"
                             android:textSize="20sp"
                             android:layout_weight="1"/>
 
@@ -83,7 +83,7 @@
                             android:layout_gravity="end"
                             android:textColor="@color/primary_text"
                             android:text="1/100"
-                            android:fontFamily="sans-serif-light"
+                            android:fontFamily="sans-serif-condensed-light"
                             android:textSize="20sp"
                             android:id="@+id/usage_text"/>
 

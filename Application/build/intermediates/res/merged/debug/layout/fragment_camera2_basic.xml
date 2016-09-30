@@ -35,14 +35,16 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
         android:alpha=".6"
-        android:id="@+id/camera_change_fab"/>
+        android:id="@+id/camera_change_fab"
+        android:contentDescription="@string/description_camera_switch_button"/>
 
     <com.ambercam.android.camera2basic.util.AutoFitTextureView
         android:id="@+id/texture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/description_camera_preview"/>
 
         <FrameLayout
         android:id="@+id/control"
@@ -61,11 +63,12 @@
             android:src="@drawable/ic_camera_black_48dp"
             android:scaleType="centerInside"
             android:background="@color/primary"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:contentDescription="@string/description_camera_button"/>
 
         <ImageButton
             android:id="@+id/info"
-            android:contentDescription="@string/description_info"
+            android:contentDescription="@string/description_nav_button"
             style="@android:style/Widget.Material.Light.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,13 +78,13 @@
 
         <ImageButton
             android:id="@+id/cloud_gallery"
-            android:contentDescription="@string/description_info"
+            android:contentDescription="@string/description_gallery_button"
             style="@android:style/Widget.Material.Light.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|right"
             android:padding="20dp"
-            android:src="@drawable/ic_image_black_48dp" />
+            android:src="@drawable/ic_image_black_48dp"/>
 
     </FrameLayout>
 

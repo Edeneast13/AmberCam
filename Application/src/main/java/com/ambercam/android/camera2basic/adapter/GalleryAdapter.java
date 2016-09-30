@@ -46,6 +46,7 @@ public class GalleryAdapter extends ArrayAdapter {
         for (int i = 0; i < mArrayList.size(); i++) {
             Glide.with(mContext)
                     .load(mArrayList.get(position))
+                    .centerCrop()
                     .into(mImageView);
         }
         return mImageView;

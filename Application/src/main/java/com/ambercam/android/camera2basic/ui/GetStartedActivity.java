@@ -35,7 +35,7 @@ public class GetStartedActivity extends Activity {
     private FirebaseAuth.AuthStateListener mAuthListener;
     private TextView mCreateTextView;
     private ImageView mIconImageView;
-    private TextView mTitleTextView;
+    private ImageView mTitleImageView;
 
     /**
      * LIFE CYCLE methods
@@ -83,7 +83,7 @@ public class GetStartedActivity extends Activity {
         mPasswordEditText = (EditText)findViewById(R.id.get_started_password);
         mLoginButton = (Button)findViewById(R.id.get_started_login);
         mCreateTextView = (TextView)findViewById(R.id.get_started_create);
-        mTitleTextView = (TextView)findViewById(R.id.get_started_title);
+        mTitleImageView = (ImageView)findViewById(R.id.get_started_title);
         mIconImageView = (ImageView)findViewById(R.id.get_started_icon);
     }
 
@@ -202,7 +202,7 @@ public class GetStartedActivity extends Activity {
         iconMover.setDuration(700);
 
         ObjectAnimator titleMover = ObjectAnimator.ofFloat(
-                mTitleTextView,
+                mTitleImageView,
                 "translationY",
                 (Util.returnScreenHeight(getApplicationContext())),
                 0f);

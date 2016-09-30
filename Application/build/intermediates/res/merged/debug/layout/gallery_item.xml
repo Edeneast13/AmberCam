@@ -3,5 +3,6 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:transitionName="image"
-           android:id="@+id/gallery_item">
+           android:id="@+id/gallery_item"
+           android:contentDescription="@string/description_image_detail">
 </ImageView>
