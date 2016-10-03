@@ -37,6 +37,7 @@
             android:theme="@style/AmberMaterial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -48,8 +49,8 @@
         <activity
             android:name=".ui.CreateAccountActivity"
             android:label="@string/title_activity_create_account"
-            android:theme="@style/AmberMaterial"
-            android:parentActivityName=".ui.GetStartedActivity">
+            android:parentActivityName=".ui.GetStartedActivity"
+            android:theme="@style/AmberMaterial">
         </activity>
         <activity
             android:name=".ui.GalleryActivity"
@@ -65,8 +66,12 @@
         <activity
             android:name=".ui.UsageActivity"
             android:label="@string/title_activity_usage"
-            android:theme="@style/CloudUsageAmberMaterial"
-            android:parentActivityName=".ui.CameraActivity">
+            android:parentActivityName=".ui.CameraActivity"
+            android:theme="@style/CloudUsageAmberMaterial">
+        </activity>
+        <activity
+            android:name=".ui.PreferenceActivity"
+            android:label="@string/title_activity_preference">
         </activity>
     </application>
 

@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -329,15 +355,9 @@
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
-    <dimen name="margin_huge">64dp</dimen>
-    <dimen name="margin_large">32dp</dimen>
-    <dimen name="margin_medium">16dp</dimen>
-    <dimen name="margin_small">8dp</dimen>
-    <dimen name="margin_tiny">4dp</dimen>
     <dimen name="md_action_corner_radius">2dp</dimen>
     <dimen name="md_bg_corner_radius">2dp</dimen>
     <dimen name="md_button_frame_vertical_padding">8dp</dimen>
@@ -374,7 +394,7 @@
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">16dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -425,7 +445,6 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">Camera2Basic</string>
     <string name="app_title">AmberCam</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="authentication_failed">Authentication Failed</string>
@@ -457,10 +476,17 @@
     <string name="create_account_confirm_password">confirm password</string>
     <string name="create_account_create">Join Us!</string>
     <string name="default_web_client_id" translatable="false">388833893683-b6tpbp87ejfiitkvgfroiou70a7ij3lv.apps.googleusercontent.com</string>
+    <string name="description_camera_button">Camera Button</string>
+    <string name="description_camera_preview">Camera Preview</string>
+    <string name="description_camera_switch_button">Switch Cameras</string>
+    <string name="description_gallery_button">Gallery Button</string>
+    <string name="description_image_detail">Gallery Image Detail</string>
     <string name="description_info">Info</string>
+    <string name="description_nav_button">Navigation Button</string>
     <string name="detail_delete_failed_toast">Deletion Failed</string>
     <string name="detail_delete_success_toast">Image Deleted</string>
     <string name="detail_delete_text">Delete</string>
+    <string name="detail_share_text">Share</string>
     <string name="drawer_closed">Drawer Closed</string>
     <string name="drawer_open">Drawer Open</string>
     <string name="email_no_match">emails do not match</string>
@@ -475,16 +501,6 @@
     <string name="google_app_id" translatable="false">1:388833893683:android:1b4ee6747d33c111</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDD0Uio17Hw3NtnJjK3NJSXqvskkqMQcpI</string>
     <string name="google_storage_bucket" translatable="false">cloudcamera-95ade.appspot.com</string>
-    <string name="intro_message">
-        
-        
-            
-            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
-            you can display camera preview and take pictures.
-            
-        
-        
-    </string>
     <string name="menu_delete_forever">Delete</string>
     <string name="menu_element_feedback">Send Feedback</string>
     <string name="menu_element_log_out">Log Out</string>
@@ -494,6 +510,22 @@
     <string name="menu_toolbar_text">Menu</string>
     <string name="password_no_match">passwords do not match</string>
     <string name="picture">Picture</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <string name="pref_title_vibrate">Vibrate</string>
     <string name="request_permission">AmberCam needs camera permission</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="storage_full_toast">You have reached your Amber Storage limit. Purchase more to keep snapping away!</string>
@@ -502,6 +534,7 @@
     <string name="title_activity_gallery">GalleryActivity</string>
     <string name="title_activity_get_started">GetStartedActivity</string>
     <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_settings">Settings</string>
     <string name="title_activity_usage">UsageActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -521,7 +554,6 @@
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
-    <style name="AppTheme" parent="Theme.Sample"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1867,7 +1899,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Base" parent="android:Theme.Light"/>
     <style name="Theme.Design" parent="Theme.AppCompat">
         <item name="textColorError">@color/design_textinput_error_color_dark</item>
     </style>
@@ -1892,7 +1923,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Sample" parent="Theme.Base"/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
@@ -1900,7 +1930,6 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <style name="Widget"/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -2099,15 +2128,5 @@
         <item name="android:maxWidth">14dp</item>
         <item name="android:minHeight">14dp</item>
         <item name="android:maxHeight">14dp</item>
-    </style>
-    <style name="Widget.SampleMessage">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
-        <item name="android:lineSpacingMultiplier">1.1</item>
-    </style>
-    <style name="Widget.SampleMessageTile">
-        <item name="android:background">@drawable/tile</item>
-        <item name="android:shadowColor">#7F000000</item>
-        <item name="android:shadowDy">-3.5</item>
-        <item name="android:shadowRadius">2</item>
     </style>
 </resources>

@@ -4,8 +4,10 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -179,6 +181,7 @@ public class DetailActivity extends AppCompatActivity {
         Glide.with(getApplicationContext())
                 .load(list.get(position))
                 .into(mDetailImageView);
+        handleFabBehavior();
     }
 
     /**
@@ -254,6 +257,9 @@ public class DetailActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * listener for camera floating action button
+     */
     public void setCameraFabListener() {
         mCameraFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -419,6 +425,20 @@ public class DetailActivity extends AppCompatActivity {
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_TEXT, url);
         startActivity(Intent.createChooser(shareIntent, "Share using"));
+    }
+
+    /**
+     * handles fab behavior according to user preferences
+     */
+    public void handleFabBehavior(){
+        SharedPreferences fabPreference = PreferenceManager
+                .getDefaultSharedPreferences(getApplicationContext());
+        boolean isVisible = fabPreference
+                .getBoolean(getString(R.string.preference_key_hide), false);
+
+        if(isVisible == true){
+            mCameraFab.setVisibility(View.GONE);
+        }
     }
 
     /**

@@ -1780,27 +1780,6 @@
                         "endOffset": 18445
                     }
                 }
-            },
-            {
-                "to": {
-                    "startLine": 275,
-                    "startColumn": 4,
-                    "startOffset": 19960,
-                    "endLine": 276,
-                    "endColumn": 12,
-                    "endOffset": 20036
-                },
-                "from": {
-                    "file": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/values-v21/base-template-styles.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 677,
-                        "endLine": 21,
-                        "endColumn": 12,
-                        "endOffset": 753
-                    }
-                }
             }
         ]
     }

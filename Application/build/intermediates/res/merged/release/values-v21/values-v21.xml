@@ -273,6 +273,4 @@
     </style>
     <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
-    <style name="Theme.Base" parent="android:Theme.Material.Light">
-    </style>
 </resources>

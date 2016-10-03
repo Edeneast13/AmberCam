@@ -69,4 +69,15 @@
     <string name="description_camera_switch_button">Switch Cameras</string>
     <string name="description_camera_preview">Camera Preview</string>
     <string name="description_image_detail">Gallery Image Detail</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- preference strings -->
+    <string name="preference_title_hide">Hide Camera Button</string>
+    <string name="preference_summary_hide">This option will allow you to hide the 
+        camera button when viewing a detailed view of your photos.</string>
+    <string name="preference_key_hide">hide_button</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+    <string name="action_settings">Settings</string>
+
+
 </resources>

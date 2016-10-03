@@ -1488,6 +1488,15 @@ public class Camera2BasicFragment extends Fragment
     }
 
     /**
+     * opens the preference activity
+     */
+    public void preferenceIntent(){
+        Intent preferenceIntent = new Intent(getActivity(), PreferenceActivity.class);
+        startActivity(preferenceIntent);
+        getActivity().overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
+    }
+
+    /**
      * logs the user out of firebase and returns the user to the get started activity
      */
     public void logOut(){
@@ -1513,12 +1522,11 @@ public class Camera2BasicFragment extends Fragment
                         break;
                     }
                     case R.id.menu_rate: {
-                        //openPlayStore();
-                        Util.incompleteToast(getActivity());
+                        openPlayStore();
                         break;
                     }
                     case R.id.menu_settings: {
-                        Util.incompleteToast(getActivity());
+                        preferenceIntent();
                         break;
                     }
                     case R.id.menu_logout: {

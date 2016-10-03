@@ -329,15 +329,9 @@
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
-    <dimen name="margin_huge">64dp</dimen>
-    <dimen name="margin_large">32dp</dimen>
-    <dimen name="margin_medium">16dp</dimen>
-    <dimen name="margin_small">8dp</dimen>
-    <dimen name="margin_tiny">4dp</dimen>
     <dimen name="md_action_corner_radius">2dp</dimen>
     <dimen name="md_bg_corner_radius">2dp</dimen>
     <dimen name="md_button_frame_vertical_padding">8dp</dimen>
@@ -374,7 +368,7 @@
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">16dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -425,7 +419,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">Camera2Basic</string>
+    <string name="action_settings">Settings</string>
     <string name="app_title">AmberCam</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="authentication_failed">Authentication Failed</string>
@@ -482,16 +476,6 @@
     <string name="google_app_id" translatable="false">1:388833893683:android:1b4ee6747d33c111</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDD0Uio17Hw3NtnJjK3NJSXqvskkqMQcpI</string>
     <string name="google_storage_bucket" translatable="false">cloudcamera-95ade.appspot.com</string>
-    <string name="intro_message">
-        
-        
-            
-            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
-            you can display camera preview and take pictures.
-            
-        
-        
-    </string>
     <string name="menu_delete_forever">Delete</string>
     <string name="menu_element_feedback">Send Feedback</string>
     <string name="menu_element_log_out">Log Out</string>
@@ -501,6 +485,10 @@
     <string name="menu_toolbar_text">Menu</string>
     <string name="password_no_match">passwords do not match</string>
     <string name="picture">Picture</string>
+    <string name="preference_key_hide">hide_button</string>
+    <string name="preference_summary_hide">This option will allow you to hide the 
+        camera button when viewing a detailed view of your photos.</string>
+    <string name="preference_title_hide">Hide Camera Button</string>
     <string name="request_permission">AmberCam needs camera permission</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="storage_full_toast">You have reached your Amber Storage limit. Purchase more to keep snapping away!</string>
@@ -509,6 +497,8 @@
     <string name="title_activity_gallery">GalleryActivity</string>
     <string name="title_activity_get_started">GetStartedActivity</string>
     <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+    <string name="title_activity_settings">Settings</string>
     <string name="title_activity_usage">UsageActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -528,7 +518,6 @@
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
-    <style name="AppTheme" parent="Theme.Sample"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1874,7 +1863,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Base" parent="android:Theme.Light"/>
     <style name="Theme.Design" parent="Theme.AppCompat">
         <item name="textColorError">@color/design_textinput_error_color_dark</item>
     </style>
@@ -1899,7 +1887,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Sample" parent="Theme.Base"/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
@@ -1907,7 +1894,6 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <style name="Widget"/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -2106,15 +2092,5 @@
         <item name="android:maxWidth">14dp</item>
         <item name="android:minHeight">14dp</item>
         <item name="android:maxHeight">14dp</item>
-    </style>
-    <style name="Widget.SampleMessage">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
-        <item name="android:lineSpacingMultiplier">1.1</item>
-    </style>
-    <style name="Widget.SampleMessageTile">
-        <item name="android:background">@drawable/tile</item>
-        <item name="android:shadowColor">#7F000000</item>
-        <item name="android:shadowDy">-3.5</item>
-        <item name="android:shadowRadius">2</item>
     </style>
 </resources>

@@ -416,6 +416,15 @@ public class GalleryActivity extends AppCompatActivity {
     }
 
     /**
+     * opens the preference activity
+     */
+    public void preferenceIntent(){
+        Intent preferenceIntent = new Intent(getApplicationContext(), PreferenceActivity.class);
+        startActivity(preferenceIntent);
+        overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
+    }
+
+    /**
      * logs the user out of firebase and returns the user to the get started activity
      */
     public void logOut(){
@@ -441,12 +450,11 @@ public class GalleryActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.menu_rate: {
-                        //openPlayStore();
-                        Util.incompleteToast(getApplicationContext());
+                        openPlayStore();
                         break;
                     }
                     case R.id.menu_settings: {
-                        Util.incompleteToast(getApplicationContext());
+                        preferenceIntent();
                         break;
                     }
                     case R.id.menu_logout: {
