@@ -67,6 +67,8 @@ public class DetailActivity extends AppCompatActivity {
     final String SWIPEDIRECTIONRIGHT = "RIGHT";
     final int VIEWSLIDEDURATION = 300;
 
+    private SharedPreferences mUserPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +91,8 @@ public class DetailActivity extends AppCompatActivity {
 
         SplitUrl splitUrl = new SplitUrl(mPosition, mImageUrlList);
         splitUrl.run();
+
+        returnUserPreferences();
 
         updateUI(mImageUrlList, mPosition);
     }
@@ -151,7 +155,7 @@ public class DetailActivity extends AppCompatActivity {
                 else{
                     //if button is not visible it is shown
                     mRelativeLayout.setVisibility(View.VISIBLE);
-                    setDeviceVibration();
+                    handleDeviceVibration();
                     mCameraFab.setVisibility(View.GONE);
                 }
                 break;
@@ -185,7 +189,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     /**
-     * long click listener for the detail imageview
+     * long click listener for the detail ImageView
      */
     public void setDetailImageViewLongClickListener(){
         mDetailImageView.setOnLongClickListener(new View.OnLongClickListener() {
@@ -428,16 +432,33 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     /**
+     * retrieves shared preferences for user preferences
+     */
+    public void returnUserPreferences(){
+        mUserPreferences = PreferenceManager
+                .getDefaultSharedPreferences(getApplicationContext());
+    }
+
+    /**
      * handles fab behavior according to user preferences
      */
     public void handleFabBehavior(){
-        SharedPreferences fabPreference = PreferenceManager
-                .getDefaultSharedPreferences(getApplicationContext());
-        boolean isVisible = fabPreference
+        boolean isVisible = mUserPreferences
                 .getBoolean(getString(R.string.preference_key_hide), false);
 
         if(isVisible == true){
             mCameraFab.setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * handles device vibration behavior according to user preferences
+     */
+    public void handleDeviceVibration(){
+        boolean vibrationEnable = mUserPreferences
+                .getBoolean(getString(R.string.preference_key_vibration), false);
+        if(vibrationEnable == false){
+            setDeviceVibration();
         }
     }
 
@@ -476,7 +497,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     /**
-     * handles detail imageview slide animation off thread
+     * handles detail ImageView slide animation off thread
      */
     public class SlideImageViewAnimation implements Runnable{
 

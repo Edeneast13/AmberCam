@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <array name="purchase_amount_list">
+        <item>1000 Photos</item>
+        <item>1500 Photos</item>
+        <item>1800 Photos</item>
+        <item>2500 Photos</item>
+        <item>3500 Photos</item>
+        <item>5000 Photos</item>
+        <item>Unlimited</item>
+    </array>
+    <array name="purchase_price_list">
+        <item>$1.99</item>
+        <item>$2.99</item>
+        <item>$3.99</item>
+        <item>$6.99</item>
+        <item>$9.99</item>
+        <item>$13.99</item>
+        <item>$19.99</item>
+    </array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -426,6 +444,7 @@
     <string name="authentication_success">Success!</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="camera_general_failure">Image upload failed</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
@@ -486,9 +505,12 @@
     <string name="password_no_match">passwords do not match</string>
     <string name="picture">Picture</string>
     <string name="preference_key_hide">hide_button</string>
+    <string name="preference_key_vibration">disable_vibration</string>
     <string name="preference_summary_hide">This option will allow you to hide the 
         camera button when viewing a detailed view of your photos.</string>
+    <string name="preference_summary_vibration">Disable device vibration within AmberCam.</string>
     <string name="preference_title_hide">Hide Camera Button</string>
+    <string name="preference_title_vibration">Disable Device Vibration</string>
     <string name="request_permission">AmberCam needs camera permission</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="storage_full_toast">You have reached your Amber Storage limit. Purchase more to keep snapping away!</string>
@@ -500,6 +522,8 @@
     <string name="title_activity_preference">PreferenceActivity</string>
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_usage">UsageActivity</string>
+    <string name="usage_purchase_title">Expand your experience!</string>
+    <string name="usage_version_title">version 1.0.0</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="AmberMaterial" parent="Theme.AppCompat.NoActionBar">

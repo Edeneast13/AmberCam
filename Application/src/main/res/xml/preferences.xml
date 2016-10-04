@@ -5,4 +5,9 @@
         android:key="@string/preference_key_hide"
         android:summary="@string/preference_summary_hide"
         android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:title="@string/preference_title_vibration"
+        android:key="@string/preference_key_vibration"
+        android:summary="@string/preference_summary_vibration"
+        android:defaultValue="false"/>
 </PreferenceScreen>

@@ -1117,10 +1117,17 @@ public class Camera2BasicFragment extends Fragment
         switch (view.getId()) {
             case R.id.picture: {
                 if(Util.activeNetworkCheck(getActivity()) == true) {
-                    if (mCountData.getImageCount() < mCountData.getImageMax()) {
-                        takePicture();
-                    } else {
-                        handleFullStorage();
+                    try {
+                        if (mCountData.getImageCount() < mCountData.getImageMax()) {
+                            takePicture();
+                        } else {
+                            handleFullStorage();
+                        }
+                    }catch (Exception e){
+                        Toast.makeText(getActivity(),
+                                getResources().getString(R.string.camera_general_failure),
+                                Toast.LENGTH_SHORT)
+                        .show();
                     }
                 }
                 else{

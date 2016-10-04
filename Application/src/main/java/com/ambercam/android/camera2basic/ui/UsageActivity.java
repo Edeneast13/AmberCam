@@ -5,10 +5,13 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.ambercam.android.camera2basic.CountData;
+import com.ambercam.android.camera2basic.PurchaseItem;
 import com.ambercam.android.camera2basic.R;
+import com.ambercam.android.camera2basic.adapter.PurchaseAdapter;
 import com.ambercam.android.camera2basic.util.Util;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -17,6 +20,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
@@ -27,7 +33,9 @@ public class UsageActivity extends AppCompatActivity {
     private MaterialProgressBar mUsageProgessBar;
     private TextView mUsagePercentTextView;
     private CardView mCloudCardView;
+    private CardView mPurchaseCardView;
     private TextView mUserNameTextView;
+    private ListView mPurchaseListView;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -35,6 +43,8 @@ public class UsageActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseReference;
     private CountData mCountData;
     private ChildEventListener mChildEventListener;
+
+    private ArrayList<PurchaseItem> mPurchaseItems = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +84,8 @@ public class UsageActivity extends AppCompatActivity {
         mUsagePercentTextView = (TextView)findViewById(R.id.usage_percent_text);
         mCloudCardView = (CardView)findViewById(R.id.image_surface);
         mUserNameTextView = (TextView)findViewById(R.id.usage_user_text);
+        mPurchaseCardView = (CardView)findViewById(R.id.purchase_surface);
+        mPurchaseListView = (ListView)findViewById(R.id.purchase_listView);
     }
 
     /**
@@ -120,9 +132,7 @@ public class UsageActivity extends AppCompatActivity {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 mCountData = dataSnapshot.getValue(CountData.class);
-                setUsageProgessBarValue(mCountData.getImageMax(), mCountData.getImageCount());
-                setUsageTextViewText(mCountData.getImageMax(), mCountData.getImageCount());
-                setCloudPercentText(mCountData.getImageMax(), mCountData.getImageCount());
+                updateUI();
             }
 
             @Override
@@ -172,6 +182,7 @@ public class UsageActivity extends AppCompatActivity {
      */
     public void setCardBackgroundColors(){
         mCloudCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
+        mPurchaseCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
     }
 
     /**
@@ -179,5 +190,28 @@ public class UsageActivity extends AppCompatActivity {
      */
     public void setUserNameTextView(){
         mUserNameTextView.setText(mActiveUser.getEmail().toString());
+    }
+
+    /**
+     * populates the purchaseItems arrayList with array resources
+     */
+    public void setPurchaseItems(){
+        String[] price = getResources().getStringArray(R.array.purchase_price_list);
+        String[] amount = getResources().getStringArray(R.array.purchase_amount_list);
+        for (int i = 0; i < price.length; i++) {
+            PurchaseItem purchaseItem = new PurchaseItem(amount[i], price[i]);
+            mPurchaseItems.add(purchaseItem);
+        }
+    }
+
+    public void updateUI(){
+        setUsageProgessBarValue(mCountData.getImageMax(), mCountData.getImageCount());
+        setUsageTextViewText(mCountData.getImageMax(), mCountData.getImageCount());
+        setCloudPercentText(mCountData.getImageMax(), mCountData.getImageCount());
+
+        setPurchaseItems();
+        PurchaseAdapter adapter = new PurchaseAdapter(getApplicationContext(), mPurchaseItems);
+        mPurchaseListView.setEnabled(false);
+        mPurchaseListView.setAdapter(adapter);
     }
 }
