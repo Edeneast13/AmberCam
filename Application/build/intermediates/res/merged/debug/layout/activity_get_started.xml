@@ -22,15 +22,10 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:src="@drawable/ic_launcher"
-            android:id="@+id/get_started_icon"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:src="@drawable/ambercam_title"
-            android:layout_gravity="center"
-            android:id="@+id/get_started_title"/>
+            android:src="@drawable/amber_logo"
+            android:id="@+id/get_started_icon"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"/>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

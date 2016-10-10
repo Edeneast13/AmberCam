@@ -4,12 +4,15 @@ import android.content.Context;
 import android.graphics.Point;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.Display;
 import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+
+import java.util.ArrayList;
 
 /**
  * Created by brianroper on 8/4/16.
@@ -87,8 +90,33 @@ public class Util {
         Toast.makeText(context, "This feature isn't finished yet", Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * toast displayed to user when there is no available network
+     */
     static public void noActiveNetworkToast(Context context){
         Toast.makeText(context, "There is currently no active network connection."
                 + " AmberCam requires a network connection.", Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * @param array
+     * @param message
+     * easy logging for String arrays
+     */
+    public static void logArray(String[] array, String message){
+        for(int i = 0; i <= array.length; i++){
+            Log.i(message, array[i]);
+        }
+    }
+
+    /**
+     * @param list
+     * @param message
+     * easy logging for String array lists
+     */
+    public static void logList(ArrayList<String> list, String message){
+        for(int i = 0; i <= list.size(); i++){
+            Log.i(message, list.get(i));
+        }
     }
 }

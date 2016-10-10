@@ -21,4 +21,19 @@
         <item>Unlimited</item>
     </array>
 
+    <!-- gallery column count preference arrays -->
+    <string-array name="preference_entries_gallery">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+    </string-array>
+
+    <string-array name="preference_values_gallery">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
 </resources>

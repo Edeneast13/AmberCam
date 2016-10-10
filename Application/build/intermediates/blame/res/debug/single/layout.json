@@ -76,6 +76,10 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/res/layout/md_dialog_input_check.xml"
     },
     {
+        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/gallery_recycler_view.xml",
+        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout/gallery_recycler_view.xml"
+    },
+    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_media.xml"
     },

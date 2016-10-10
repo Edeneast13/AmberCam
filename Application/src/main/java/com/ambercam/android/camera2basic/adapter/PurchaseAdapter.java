@@ -1,6 +1,5 @@
 package com.ambercam.android.camera2basic.adapter;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.PurchaseItem;

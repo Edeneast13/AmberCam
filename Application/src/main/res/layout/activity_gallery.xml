@@ -17,14 +17,21 @@
     tools:context=".ui.GalleryActivity"
     android:background="@color/base_background">
 
-    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+   <!-- <GridView xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="wrap_content"
               android:layout_height="match_parent"
               android:id="@+id/gallery_gridview"
               android:numColumns="3"
               android:layout_marginBottom="80dp">
-    </GridView>
+    </GridView> -->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/gallery_recycler">
+    </android.support.v7.widget.RecyclerView>
 
     <FrameLayout
         android:id="@+id/control"

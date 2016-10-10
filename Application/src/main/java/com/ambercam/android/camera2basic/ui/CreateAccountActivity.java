@@ -93,7 +93,8 @@ public class CreateAccountActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(getString(R.string.app_title));
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setLogo(R.drawable.ambercam_title);
     }
 
     @Override

@@ -3,12 +3,19 @@ package com.ambercam.android.camera2basic.ui;
 import android.app.ActivityOptions;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,6 +27,7 @@ import android.widget.ImageView;
 import com.ambercam.android.camera2basic.CloudImage;
 import com.ambercam.android.camera2basic.adapter.GalleryAdapter;
 import com.ambercam.android.camera2basic.R;
+import com.ambercam.android.camera2basic.adapter.ImageAdapter;
 import com.ambercam.android.camera2basic.util.Util;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -28,10 +36,12 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 public class GalleryActivity extends AppCompatActivity {
@@ -42,12 +52,13 @@ public class GalleryActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     private FirebaseUser mActiveUser;
     private DatabaseReference mDatabaseReference;
-    private ChildEventListener mChildEventListener;
-    private ArrayList<String> mFirebaseDataList = new ArrayList<String>();
     private ArrayList<String> mImageUrlList = new ArrayList<>();
-    private GridView mGalleryGridView;
     private NavigationView mNavigationView;
     private DrawerLayout mDrawerLayout;
+    private SharedPreferences mUserPreferences;
+    private RecyclerView mGalleryRecycler;
+
+    private ImageAdapter mImageAdapter;
 
     /**
      * Life Cycle methods
@@ -71,7 +82,9 @@ public class GalleryActivity extends AppCompatActivity {
             //button listeners
             setCameraButtonListener();
             setMenuButtonListener();
-            setGalleryGridViewListener();
+            //setGalleryGridViewListener();
+
+            returnUserPreferences();
         }
     }
 
@@ -92,13 +105,11 @@ public class GalleryActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mImageUrlList.clear();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        //mImageUrlList.clear();
     }
 
     @Override
@@ -113,9 +124,19 @@ public class GalleryActivity extends AppCompatActivity {
     public void initializeViews(){
         mCameraButton = (ImageButton)findViewById(R.id.gallery_picture);
         mMenuButton = (ImageButton)findViewById(R.id.gallery_menu);
-        mGalleryGridView = (GridView) findViewById(R.id.gallery_gridview);
         mNavigationView = (NavigationView)findViewById(R.id.gallery_nav_view);
         mDrawerLayout = (DrawerLayout)findViewById(R.id.gallery_drawer_layout);
+        mGalleryRecycler = (RecyclerView)findViewById(R.id.gallery_recycler);
+
+        mGalleryRecycler.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
+}
+
+    /**
+     * returns the users preferences
+     */
+    public void returnUserPreferences(){
+        mUserPreferences = PreferenceManager
+                .getDefaultSharedPreferences(getApplicationContext());
     }
 
     /**
@@ -145,9 +166,9 @@ public class GalleryActivity extends AppCompatActivity {
     }
 
     /**
-     * listener for gallery gridview
+     * listener for gallery GridView
      */
-    public void setGalleryGridViewListener() {
+    /*public void setGalleryGridViewListener() {
         mGalleryGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -155,7 +176,7 @@ public class GalleryActivity extends AppCompatActivity {
                 detailIntent.putStringArrayListExtra("list", mImageUrlList);
                 detailIntent.putExtra("position", position);
 
-                ImageView sharedElement = (ImageView)view;
+                ImageView sharedElement = (ImageView) view;
 
                 Bundle bundle = ActivityOptions
                         .makeSceneTransitionAnimation(GalleryActivity.this, sharedElement, sharedElement.getTransitionName())
@@ -164,10 +185,10 @@ public class GalleryActivity extends AppCompatActivity {
                 startActivity(detailIntent, bundle);
             }
         });
-    }
+    }*/
 
     /**
-     * listner for firebase authentication
+     * listener for firebase authentication
      */
     public void setAuthStateListener(){
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
@@ -184,71 +205,38 @@ public class GalleryActivity extends AppCompatActivity {
                             .getReference()
                             .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()));
 
-                    setChildEventListener(mDatabaseReference, mChildEventListener);
+                    updateUI();
                 }
             }
         };
     }
 
     /**
-     * set child event listener for firebase real-time database
+     * updates the GridView to contain the most recent images
      */
-    public void setChildEventListener(final DatabaseReference reference,
-                                      ChildEventListener childEventListener){
-
-        childEventListener = new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                Map<String, CloudImage> cd = (HashMap<String, CloudImage>)dataSnapshot.getValue();
-                Collection<CloudImage> values = cd.values();
-
-                mFirebaseDataList = new ArrayList(values);
-
-                /*
-                 * puts the mImageUrlList into a HashSet and removes the duplicate elements
-                 * and repopulates the list
-                 */
-                /*HashSet<String> hashSet = new HashSet<>();
-                hashSet.addAll(mImageUrlList);
-                mImageUrlList.clear();
-                mImageUrlList.addAll(hashSet);*/
-
-                GallerySort gallerySort = new GallerySort(mFirebaseDataList);
-                gallerySort.run();
-
-                updateUI();
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        };
-        reference.addChildEventListener(childEventListener);
+    public void updateUI(){
+        mImageAdapter = new ImageAdapter(getApplicationContext(), mDatabaseReference);
+        mGalleryRecycler.setAdapter(mImageAdapter);
     }
 
     /**
-     * updates the gridview to contain the most recent images
+     * changes the column count depending on user preferences
      */
-    public void updateUI(){
-        GalleryAdapter adapter = new GalleryAdapter(getApplicationContext(), mImageUrlList);
-        mGalleryGridView.setAdapter(adapter);
+    public void handleGalleryGridViewPreferenceBehavior(){
+        String columnCount = mUserPreferences
+                .getString(getString(R.string.preference_key_gallery), "3");
+
+        if(columnCount == "1"){
+            mGalleryRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        }
+        else if(columnCount == "2"){
+            mGalleryRecycler.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+        }
+        else if(columnCount == "3"){
+            mGalleryRecycler.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
+        }
+
+       // mGalleryGridView.setNumColumns(Integer.parseInt(columnCount));
     }
 
     /**
@@ -359,7 +347,6 @@ public class GalleryActivity extends AppCompatActivity {
             for (int i = 0; i < urlArray.length; i++) {
 
                 mImageUrlList.add(urlArray[i]);
-
             }
         }
     }
