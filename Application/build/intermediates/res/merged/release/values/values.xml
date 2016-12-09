@@ -539,7 +539,7 @@
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_usage">UsageActivity</string>
     <string name="usage_purchase_title">Expand your experience!</string>
-    <string name="usage_version_title">version 1.0.0</string>
+    <string name="usage_version_title">version 1.4.0</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="AmberMaterial" parent="Theme.AppCompat.NoActionBar">

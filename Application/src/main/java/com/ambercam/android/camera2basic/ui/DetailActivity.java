@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.ambercam.android.camera2basic.CountData;
+import com.ambercam.android.camera2basic.models.CountData;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.util.OnSwipeTouchListener;
 import com.ambercam.android.camera2basic.util.Util;

@@ -1,6 +1,5 @@
 package com.ambercam.android.camera2basic.ui;
 
-import android.app.ActivityOptions;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,35 +13,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
-import com.ambercam.android.camera2basic.CloudImage;
-import com.ambercam.android.camera2basic.adapter.GalleryAdapter;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.adapter.ImageAdapter;
 import com.ambercam.android.camera2basic.util.Util;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 
 public class GalleryActivity extends AppCompatActivity {
 
@@ -164,28 +148,6 @@ public class GalleryActivity extends AppCompatActivity {
             }
         });
     }
-
-    /**
-     * listener for gallery GridView
-     */
-    /*public void setGalleryGridViewListener() {
-        mGalleryGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent detailIntent = new Intent(getApplicationContext(), DetailActivity.class);
-                detailIntent.putStringArrayListExtra("list", mImageUrlList);
-                detailIntent.putExtra("position", position);
-
-                ImageView sharedElement = (ImageView) view;
-
-                Bundle bundle = ActivityOptions
-                        .makeSceneTransitionAnimation(GalleryActivity.this, sharedElement, sharedElement.getTransitionName())
-                        .toBundle();
-
-                startActivity(detailIntent, bundle);
-            }
-        });
-    }*/
 
     /**
      * listener for firebase authentication

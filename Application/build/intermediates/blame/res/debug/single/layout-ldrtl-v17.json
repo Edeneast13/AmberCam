@@ -4,7 +4,15 @@
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/res/layout-ldrtl-v17/md_listitem_multichoice.xml"
     },
     {
+        "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout-ldrtl-v17/md_listitem_singlechoice.xml",
+        "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/res/layout-ldrtl-v17/md_listitem_singlechoice.xml"
+    },
+    {
         "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout-ldrtl-v17/md_listitem_singlechoice.xml",
         "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/res/layout-ldrtl-v17/md_listitem_singlechoice.xml"
+    },
+    {
+        "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout-ldrtl-v17/md_listitem_multichoice.xml",
+        "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/res/layout-ldrtl-v17/md_listitem_multichoice.xml"
     }
 ]

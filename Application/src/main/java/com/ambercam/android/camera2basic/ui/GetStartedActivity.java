@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ambercam.android.camera2basic.R;
-import com.ambercam.android.camera2basic.User;
+import com.ambercam.android.camera2basic.models.User;
 import com.ambercam.android.camera2basic.util.Util;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;

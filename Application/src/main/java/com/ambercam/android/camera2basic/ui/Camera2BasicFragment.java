@@ -71,9 +71,9 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.ambercam.android.camera2basic.CountData;
+import com.ambercam.android.camera2basic.models.CountData;
 import com.ambercam.android.camera2basic.util.AutoFitTextureView;
-import com.ambercam.android.camera2basic.CloudImage;
+import com.ambercam.android.camera2basic.models.CloudImage;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.util.Util;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -1245,6 +1245,8 @@ public class Camera2BasicFragment extends Fragment
 
             //reference to user unique storage
             StorageReference userReference = storageReference.child(user);
+
+            //TODO: add id to images
 
             //reference to value labeled by timestamp within user unique reference
             StorageReference imageReference = userReference.child(String.valueOf(image.getTimestamp()));

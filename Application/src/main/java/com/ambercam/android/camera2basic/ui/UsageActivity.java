@@ -8,8 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.ambercam.android.camera2basic.CountData;
-import com.ambercam.android.camera2basic.PurchaseItem;
+import com.ambercam.android.camera2basic.models.CountData;
+import com.ambercam.android.camera2basic.models.PurchaseItem;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.adapter.PurchaseAdapter;
 import com.ambercam.android.camera2basic.util.Util;
@@ -22,7 +22,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 

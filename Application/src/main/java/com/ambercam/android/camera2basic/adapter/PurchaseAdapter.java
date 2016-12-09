@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ambercam.android.camera2basic.R;
-import com.ambercam.android.camera2basic.PurchaseItem;
+import com.ambercam.android.camera2basic.models.PurchaseItem;
 import com.ambercam.android.camera2basic.util.Util;
 
 import java.util.ArrayList;
