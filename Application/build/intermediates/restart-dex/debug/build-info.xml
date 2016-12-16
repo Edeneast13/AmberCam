@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="25"
+    density="560dpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="478501059721641"
+    token="-4261480621792496612"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="3180" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="2159" />
+    <task
+        name="verifier"
+        duration="218" />
+
+    <artifact
+        location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/outputs/apk/Application-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="478501059721641"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/outputs/apk/Application-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

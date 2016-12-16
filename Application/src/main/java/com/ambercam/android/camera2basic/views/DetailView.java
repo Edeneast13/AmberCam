@@ -5,4 +5,9 @@ package com.ambercam.android.camera2basic.views;
  */
 
 public interface DetailView extends View {
+    void returnIntentExtras();
+    void setDeviceVibration();
+    void shareImage();
+    void returnUserPreferences();
+    void handleDeviceVibration();
 }

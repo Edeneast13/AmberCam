@@ -1,0 +1,7 @@
+#Fri Dec 16 00:19:14 EST 2016
+base.0=/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_27751e45dc22fadf828c7a8d33e112bf4d6b6f7f
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7b1cebd1ededd3f6ae5ba99c9078645b39a665ba/classes.dex
+base.1=/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7b1cebd1ededd3f6ae5ba99c9078645b39a665ba
+file.0=/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_27751e45dc22fadf828c7a8d33e112bf4d6b6f7f/classes.dex
