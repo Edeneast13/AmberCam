@@ -13,7 +13,9 @@ import android.widget.Toast;
 import com.ambercam.android.camera2basic.models.CountData;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.models.User;
+import com.ambercam.android.camera2basic.presenters.CreateAccountPresenter;
 import com.ambercam.android.camera2basic.util.Util;
+import com.ambercam.android.camera2basic.views.CreateAccountView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -23,7 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class CreateAccountActivity extends AppCompatActivity {
+public class CreateAccountActivity extends AppCompatActivity implements CreateAccountView {
 
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -34,9 +36,9 @@ public class CreateAccountActivity extends AppCompatActivity {
     private EditText mConfirmPasswordEditText;
     private Button mCreateButton;
     private User mUser;
-    final int BASE_IMAGE_MAX = 100;
-    final int BASE_IMAGE_COUNT = 0;
     private Toolbar mToolbar;
+
+    private CreateAccountPresenter mCreateAccountPresenter;
 
     /**
      * LIFE CYCLE methods
@@ -45,6 +47,9 @@ public class CreateAccountActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
+
+        mCreateAccountPresenter = new CreateAccountPresenter(getApplicationContext());
+        mCreateAccountPresenter.attachView(this);
 
         initializeViews();
         initializeToolbarBehavior(mToolbar);
@@ -102,6 +107,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     /**
      * listener for firebase authentication
      */
+    @Override
     public void setFirebaseAuthListener(){
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -132,7 +138,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                                     getResources().getString(R.string.authentication_success),
                                     Toast.LENGTH_LONG).show();
 
-                            initializeCountData(mFirebaseDatabase, newUser.getEmail());
+                            mCreateAccountPresenter.initializeCountData(mFirebaseDatabase, newUser);
 
                             Intent loginIntent = new Intent(getApplicationContext(), CameraActivity.class);
                             startActivity(loginIntent);
@@ -148,72 +154,19 @@ public class CreateAccountActivity extends AppCompatActivity {
     }
 
     /**
-     * sets the values for the users count data which is used to keep track of
-     * images stored and the users personal limit within firebase
-     */
-    public void initializeCountData(FirebaseDatabase database, String user){
-        String[] userRoot = mUser.getEmail().split("@");
-
-        //reference to the users image count
-        DatabaseReference reference = database.getReference(userRoot[0] + "_count");
-
-        //reference to the users count data
-        DatabaseReference subReference = reference.child("countData");
-
-        //all accounts start with 0 stored images and a 100 image max
-        CountData countData = new CountData(BASE_IMAGE_COUNT, BASE_IMAGE_MAX);
-
-        //sets the initialized values to the newly created firebase reference
-        subReference.setValue(countData);
-    }
-
-    /**
-     * returns text from views and puts data into new user object
-     */
-    public User returnNewUser() {
-
-        User user = new User();
-
-        //email tests
-        if (!mEmailEditText.getText().toString()
-                .equals(mConfirmEmailEditText.getText().toString())) {
-            Toast.makeText(getApplicationContext(), "emails do not match",
-                    Toast.LENGTH_SHORT).show();
-        } else if (mEmailEditText.getText().toString().equals(null)) {
-            Toast.makeText(getApplicationContext(), "Enter a valid email address",
-                    Toast.LENGTH_SHORT).show();
-        } else if (!Util.isValidEmail(mEmailEditText.getText().toString())) {
-            Toast.makeText(getApplicationContext(), "Enter a valid email address",
-                    Toast.LENGTH_SHORT).show();
-        } else {
-            user.setEmail(mEmailEditText.getText().toString());
-        }
-
-        //password tests
-        if (!mPasswordEditText.getText().toString()
-                .equals(mConfirmPasswordEditText.getText().toString())) {
-            Toast.makeText(getApplicationContext(), "Passwords do not match",
-                    Toast.LENGTH_SHORT).show();
-        }
-        else if (mPasswordEditText.getText().toString().length() < 6) {
-            Toast.makeText(getApplicationContext(), "Password must be at least 6 characters",
-                    Toast.LENGTH_SHORT).show();
-        }
-        else{
-            user.setPassword(mPasswordEditText.getText().toString());
-        }
-
-        return user;
-    }
-
-    /**
      * listener for create account button
      */
     public void createButtonListener(){
         mCreateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mUser = returnNewUser();
+
+                mUser = mCreateAccountPresenter.returnNewUser(
+                        mEmailEditText.getText().toString(),
+                        mConfirmEmailEditText.getText().toString(),
+                        mPasswordEditText.getText().toString(),
+                        mConfirmPasswordEditText.getText().toString());
+
                 if(Util.activeNetworkCheck(getApplicationContext()) == true){
                     createNewUser(mUser, mFirebaseAuth );
                 }
