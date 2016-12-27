@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.models.CountData;
+import com.ambercam.android.camera2basic.models.FirebaseData;
 import com.ambercam.android.camera2basic.ui.GalleryActivity;
 import com.ambercam.android.camera2basic.util.Util;
 import com.ambercam.android.camera2basic.views.DetailView;
@@ -39,37 +40,26 @@ public class DetailPresenter implements Presenter<DetailView> {
     private int mPosition;
 
     final String FIREBASE_BUCKET = "gs://cloudcamera-95ade.appspot.com";
-    private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthStateListener;
-    private FirebaseDatabase mFirebaseDatabase;
-    private FirebaseStorage mFirebaseStorage;
     private FirebaseUser mActiveUser;
-    private DatabaseReference mDatabaseReference;
-    private ChildEventListener mChildEventListener;
+
+    public DetailPresenter() {
+
+    }
 
     @Override
     public void onCreate() {
-
-        mAuth = FirebaseAuth.getInstance();
-        mFirebaseStorage = FirebaseStorage.getInstance();
-        mFirebaseDatabase = FirebaseDatabase.getInstance();
-
-        setAuthStateListener();
-
         SplitUrl splitUrl = new SplitUrl(mPosition, mImageUrlList);
         splitUrl.run();
     }
 
     @Override
     public void onStart() {
-        mAuth.addAuthStateListener(mAuthStateListener);
+
     }
 
     @Override
     public void onStop() {
-        if (mAuthStateListener != null) {
-            mAuth.removeAuthStateListener(mAuthStateListener);
-        }
+
     }
 
     @Override
@@ -85,23 +75,6 @@ public class DetailPresenter implements Presenter<DetailView> {
     public void returnIntentExtras(Bundle bundle){
         mPosition = bundle.getInt("position");
         mImageUrlList = bundle.getStringArrayList("list");
-    }
-
-    /**
-     * listener for firebase authentication
-     */
-    public void setAuthStateListener(){
-        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(FirebaseAuth firebaseAuth) {
-                mActiveUser = firebaseAuth.getCurrentUser();
-                mDatabaseReference = FirebaseDatabase
-                        .getInstance()
-                        .getReference()
-                        .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()) + "_count");
-                setChildEventListener(mDatabaseReference, mChildEventListener);
-            }
-        };
     }
 
     /**
@@ -135,15 +108,21 @@ public class DetailPresenter implements Presenter<DetailView> {
         reference.addChildEventListener(childEventListener);
     }
 
-    public void detailDeleteClick(){
-        String user = Util.returnSplitEmail(mActiveUser.getEmail());
+    /**
+     * deletes image data from firebase
+     */
+    public void detailDeleteClick(FirebaseData firebaseData){
+        mActiveUser = firebaseData.getFirebaseUser();
+        if (mActiveUser != null) {
+            String user = Util.returnSplitEmail(firebaseData.getFirebaseUser().getEmail());
 
-        deleteImageFromDatabase(mDatabaseReference,
-                Util.returnSplitEmail(user));
-        deleteImageFromStorage(mFirebaseStorage,
-                Util.returnSplitEmail(user));
+            deleteImageFromDatabase(firebaseData.getDatabaseReference(),
+                    Util.returnSplitEmail(user));
+            deleteImageFromStorage(firebaseData.getFirebaseStorage(),
+                    Util.returnSplitEmail(user));
 
-        updateDatabaseImageCounter(mFirebaseDatabase, user);
+            updateDatabaseImageCounter(firebaseData.getFirebaseDatabase(), user);
+        }
     }
 
     /**

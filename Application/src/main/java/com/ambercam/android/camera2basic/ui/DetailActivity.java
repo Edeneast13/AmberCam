@@ -22,11 +22,18 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.ambercam.android.camera2basic.R;
+import com.ambercam.android.camera2basic.models.FirebaseData;
 import com.ambercam.android.camera2basic.presenters.DetailPresenter;
 import com.ambercam.android.camera2basic.util.OnSwipeTouchListener;
 import com.ambercam.android.camera2basic.util.Util;
 import com.ambercam.android.camera2basic.views.DetailView;
 import com.bumptech.glide.Glide;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
 
 import java.util.ArrayList;
 
@@ -48,6 +55,15 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     final String SWIPEDIRECTIONRIGHT = "RIGHT";
     final int VIEWSLIDEDURATION = 300;
 
+    private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
+    private FirebaseDatabase mFirebaseDatabase;
+    private FirebaseStorage mFirebaseStorage;
+    private FirebaseUser mActiveUser;
+    private DatabaseReference mDatabaseReference;
+    private ChildEventListener mChildEventListener;
+    private FirebaseData mFirebaseData;
+
     private SharedPreferences mUserPreferences;
 
     @Override
@@ -61,6 +77,14 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         initializeToolbarBehavior(mToolbar);
         returnIntentExtras();
 
+        mAuth = FirebaseAuth.getInstance();
+        mFirebaseStorage = FirebaseStorage.getInstance();
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+
+        setAuthStateListener();
+
+        mFirebaseData = setFirebaseData();
+
         setDetailImageViewLongClickListener();
         setDetailDeleteButtonListener();
         setDetailImageViewSwipeListener();
@@ -71,16 +95,36 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         updateUI(mImageUrlList, mPosition);
     }
 
-
+    /**
+     * listener for firebase authentication
+     */
+    public void setAuthStateListener(){
+        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(FirebaseAuth firebaseAuth) {
+                mActiveUser = firebaseAuth.getCurrentUser();
+                Log.i("Current User: ", mActiveUser + "");
+                mDatabaseReference = FirebaseDatabase
+                        .getInstance()
+                        .getReference()
+                        .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()) + "_count");
+                mDetailPresenter.setChildEventListener(mDatabaseReference, mChildEventListener);
+            }
+        };
+    }
 
     @Override
     public void onStart() {
         super.onStart();
+        mAuth.addAuthStateListener(mAuthStateListener);
     }
 
     @Override
     public void onStop() {
         super.onStop();
+        if (mAuthStateListener != null) {
+            mAuth.removeAuthStateListener(mAuthStateListener);
+        }
     }
 
     /**
@@ -181,9 +225,25 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         mDetailDeleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDetailPresenter.detailDeleteClick();
+                setFirebaseData();
+                mDetailPresenter.detailDeleteClick(mFirebaseData);
             }
         });
+    }
+
+    /**
+     * stores all current firebase data in a single object
+     */
+    public FirebaseData setFirebaseData(){
+        FirebaseData firebaseData = new FirebaseData();
+        firebaseData.setAuth(mAuth);
+        firebaseData.setAuthStateListener(mAuthStateListener);
+        firebaseData.setDatabaseReference(mDatabaseReference);
+        firebaseData.setFirebaseDatabase(mFirebaseDatabase);
+        firebaseData.setFirebaseStorage(mFirebaseStorage);
+        firebaseData.setFirebaseUser(mActiveUser);
+        Log.i("Active User: ", mActiveUser.getEmail());
+        return firebaseData;
     }
 
     /**

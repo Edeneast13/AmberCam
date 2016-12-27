@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="85fdd059c809f2f3a0189251f5d7dc3d2d8b0210">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7b1cebd1ededd3f6ae5ba99c9078645b39a665ba/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,15 +30,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.4.0_2d921d0c9c80791b8fbc322e451b1412c3d22724/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -57,20 +39,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_7c8046f1c8dae2eaadf71d9d9d4bbfe657432f88/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c5bf800db598b3a41d873f307ac7caa1512b810a">
+        sha1="48816ebfb016fb7affb442f93694bb43c1bf45d6">
         <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_27751e45dc22fadf828c7a8d33e112bf4d6b6f7f/classes.dex" />
     </item>
     <item
@@ -81,15 +54,6 @@
         revision="23.0.3"
         sha1="be09545b7e6ff322c7286d2e80bed3b75b76c529">
         <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_ca98fe6f9a2b75e5ea522fd9ddaaa3de10705026/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.4.0_65887920fae2ee7800014a6b04f33360ffc3860d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,24 +75,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianroper/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_2e4a86be8d3e07f21e05444b4be5adb3e8a780f4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_4aee7e1837a02bed3072e981b94cdf08a1c5faf7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -138,30 +84,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianroper/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_21b507ec27e9215f8428222b3c76358a31bf4622/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
         <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.4.0_528444ce35c15fc2fbac65bcff6090898738f9e0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_b591572a6cbc74c1677fcb7b5796050982a8830d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,6 +111,123 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.4.0_88fe4d986c7e93dc740ef223adaa6839d1fbe57c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_d8162d8d6a612f4ac4126d81b9541763824807a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.4.0_feae9ec30ac63c9e054a23b886f9da29c13d317a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.4.0_ccc4f18eb17a73f599071a075be5e26c26867c0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.4.0_3160409f0568bd1d2f6ff7565a27fca51a9b175c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5ccecce853bb6f74288eea5b1d5c3e90fe906a4f">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7b1cebd1ededd3f6ae5ba99c9078645b39a665ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.4.0_2d921d0c9c80791b8fbc322e451b1412c3d22724/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_7c8046f1c8dae2eaadf71d9d9d4bbfe657432f88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.4.0_65887920fae2ee7800014a6b04f33360ffc3860d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_2e4a86be8d3e07f21e05444b4be5adb3e8a780f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_4aee7e1837a02bed3072e981b94cdf08a1c5faf7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_21b507ec27e9215f8428222b3c76358a31bf4622/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_b591572a6cbc74c1677fcb7b5796050982a8830d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -201,15 +246,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.4.0_88fe4d986c7e93dc740ef223adaa6839d1fbe57c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -219,30 +255,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_d8162d8d6a612f4ac4126d81b9541763824807a2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
         <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.7_e8b2e458cc5bcbb63f67bda45f660e956159d618/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.4.0_feae9ec30ac63c9e054a23b886f9da29c13d317a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -270,24 +288,6 @@
         revision="23.0.3"
         sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
         <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.4.0_69062c36ce9ed7d73f17a73edf1a9056366fe8ab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.4.0_ccc4f18eb17a73f599071a075be5e26c26867c0e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
-        <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.4.0_3160409f0568bd1d2f6ff7565a27fca51a9b175c/classes.dex" />
     </item>
 
 </items>

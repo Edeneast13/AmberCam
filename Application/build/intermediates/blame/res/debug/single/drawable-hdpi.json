@@ -48,12 +48,12 @@
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/drawable-hdpi/ic_camera_rear_black_48dp.png"
     },
     {
-        "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_settings_black_24dp.png",
-        "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/drawable-hdpi/ic_settings_black_24dp.png"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_star_rate_black_18dp.png",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/drawable-hdpi/ic_star_rate_black_18dp.png"
+    },
+    {
+        "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_settings_black_24dp.png",
+        "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/drawable-hdpi/ic_settings_black_24dp.png"
     },
     {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_photo_camera_black_24dp.png",
