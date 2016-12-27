@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="48816ebfb016fb7affb442f93694bb43c1bf45d6">
+        sha1="0d1eee5e8b85edd3df35d880b832de254b48fafc">
         <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_27751e45dc22fadf828c7a8d33e112bf4d6b6f7f/classes.dex" />
     </item>
     <item
@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="5ccecce853bb6f74288eea5b1d5c3e90fe906a4f">
+        sha1="421398a7cd41605f9ecc65b4de1642e6901c9b4e">
         <dex dex="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7b1cebd1ededd3f6ae5ba99c9078645b39a665ba/classes.dex" />
     </item>
     <item

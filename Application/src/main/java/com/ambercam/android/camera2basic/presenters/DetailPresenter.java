@@ -33,6 +33,7 @@ import java.util.ArrayList;
 
 public class DetailPresenter implements Presenter<DetailView> {
 
+    private Context mContext;
     private DetailView mDetailView;
     private CountData mCountData;
     private String mFinalUrl;
@@ -42,14 +43,13 @@ public class DetailPresenter implements Presenter<DetailView> {
     final String FIREBASE_BUCKET = "gs://cloudcamera-95ade.appspot.com";
     private FirebaseUser mActiveUser;
 
-    public DetailPresenter() {
-
+    public DetailPresenter(Context context) {
+        this.mContext = context;
     }
 
     @Override
     public void onCreate() {
-        SplitUrl splitUrl = new SplitUrl(mPosition, mImageUrlList);
-        splitUrl.run();
+
     }
 
     @Override
@@ -112,6 +112,10 @@ public class DetailPresenter implements Presenter<DetailView> {
      * deletes image data from firebase
      */
     public void detailDeleteClick(FirebaseData firebaseData){
+
+        SplitUrl splitUrl = new SplitUrl(mPosition, mImageUrlList);
+        splitUrl.run();
+
         mActiveUser = firebaseData.getFirebaseUser();
         if (mActiveUser != null) {
             String user = Util.returnSplitEmail(firebaseData.getFirebaseUser().getEmail());
@@ -144,10 +148,11 @@ public class DetailPresenter implements Presenter<DetailView> {
         timestampReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                /*Toast.makeText(getApplicationContext(), getString(R.string.detail_delete_success_toast),
+                Toast.makeText(mContext, mContext.getString(R.string.detail_delete_success_toast),
                         Toast.LENGTH_SHORT).show();
-                Intent galleryIntent = new Intent(getApplicationContext(), GalleryActivity.class);
-                startActivity(galleryIntent);*/
+                Intent galleryIntent = new Intent(mContext, GalleryActivity.class);
+                galleryIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                mContext.startActivity(galleryIntent);
 
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -181,7 +186,7 @@ public class DetailPresenter implements Presenter<DetailView> {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Log.i("Realtime Delete: ", "Success");
+
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

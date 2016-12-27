@@ -5,22 +5,22 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="484477759786092"
+    timestamp="581033133768994"
     token="-4261480621792496612"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FIELD_ADDED" >
 
     <task
         name="javac"
-        duration="1762" />
+        duration="768" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="156" />
+        duration="83" />
     <task
         name="verifier"
-        duration="9" />
+        duration="7" />
 
     <artifact
         location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
@@ -30,22 +30,15 @@
         type="DEX" />
 
     <build
-        timestamp="481944834464408"
+        timestamp="580679845274500"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/outputs/apk/Application-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="484263325562071"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="484477759786092"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="581033133768994"
+        verifier="FIELD_ADDED" >
         <artifact
             location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
             type="DEX" />

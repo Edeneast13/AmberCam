@@ -39,7 +39,7 @@ import java.util.ArrayList;
 
 public class DetailActivity extends AppCompatActivity implements DetailView {
 
-    DetailPresenter mDetailPresenter = new DetailPresenter();
+    DetailPresenter mDetailPresenter;
 
     private ImageView mDetailImageView;
     private RelativeLayout mRelativeLayout;
@@ -71,6 +71,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        mDetailPresenter = new DetailPresenter(getApplicationContext());
         mDetailPresenter.attachView(this);
 
         initializeViews();
@@ -78,12 +79,11 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         returnIntentExtras();
 
         mAuth = FirebaseAuth.getInstance();
-        mFirebaseStorage = FirebaseStorage.getInstance();
-        mFirebaseDatabase = FirebaseDatabase.getInstance();
 
         setAuthStateListener();
 
-        mFirebaseData = setFirebaseData();
+        mFirebaseStorage = FirebaseStorage.getInstance();
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
 
         setDetailImageViewLongClickListener();
         setDetailDeleteButtonListener();
@@ -104,11 +104,14 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
             public void onAuthStateChanged(FirebaseAuth firebaseAuth) {
                 mActiveUser = firebaseAuth.getCurrentUser();
                 Log.i("Current User: ", mActiveUser + "");
-                mDatabaseReference = FirebaseDatabase
-                        .getInstance()
-                        .getReference()
-                        .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()) + "_count");
-                mDetailPresenter.setChildEventListener(mDatabaseReference, mChildEventListener);
+                if(mActiveUser!=null){
+                    mDatabaseReference = FirebaseDatabase
+                            .getInstance()
+                            .getReference()
+                            .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()) + "_count");
+                    mDetailPresenter.setChildEventListener(mDatabaseReference, mChildEventListener);
+                    mFirebaseData = setFirebaseData();
+                }
             }
         };
     }
