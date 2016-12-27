@@ -4,32 +4,12 @@
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_spinner.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_edittext.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_default.xml"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_edittext.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_seek_thumb.xml"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_switch_thumb.xml"
     },
     {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
@@ -48,27 +28,11 @@
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_default.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_switch_track.xml"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_tint_spinner.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     }
 ]

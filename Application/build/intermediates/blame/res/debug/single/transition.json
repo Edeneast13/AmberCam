@@ -1,35 +1,11 @@
 [
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/fade_in.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/transition/fade_in.xml"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/gallery_enter.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/transition/gallery_enter.xml"
     },
     {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/activity_fade.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/transition/activity_fade.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/slide_right.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/transition/slide_right.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/slide_left.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/transition/slide_left.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/gallery_enter.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/transition/gallery_enter.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/activity_fade.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/transition/activity_fade.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/detail_slide.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/transition/detail_slide.xml"
     },
     {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/fade_out.xml",
@@ -50,9 +26,5 @@
     {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/slide_right.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/transition/slide_right.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/transition/fade_out.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/transition/fade_out.xml"
     }
 ]

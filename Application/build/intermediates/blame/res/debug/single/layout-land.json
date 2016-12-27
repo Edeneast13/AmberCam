@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout-land/fragment_camera2_basic.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/layout-land/fragment_camera2_basic.xml"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/layout-land/fragment_camera2_basic.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/layout-land/fragment_camera2_basic.xml"
     }

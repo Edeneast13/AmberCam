@@ -8,19 +8,7 @@
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/menu/drawer_content.xml"
     },
     {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/menu/menu_preference.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/menu/menu_preference.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/menu/drawer_content.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/menu/drawer_content.xml"
-    },
-    {
         "merged": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/menu/menu_preference.xml",
         "source": "/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/src/main/res/menu/menu_preference.xml"
-    },
-    {
-        "merged": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/build/intermediates/res/merged/debug/menu/menu.xml",
-        "source": "/Users/brianroper/Downloads/android-Camera2Basic-master/Application/src/main/res/menu/menu.xml"
     }
 ]
