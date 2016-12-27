@@ -3,7 +3,6 @@ package com.ambercam.android.camera2basic.presenters;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -15,7 +14,6 @@ import com.ambercam.android.camera2basic.util.Util;
 import com.ambercam.android.camera2basic.views.DetailView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -159,8 +157,8 @@ public class DetailPresenter implements Presenter<DetailView> {
             @Override
             public void onFailure(Exception e) {
                 e.printStackTrace();
-               /* Toast.makeText(getApplicationContext(), getString(R.string.detail_delete_failed_toast),
-                        Toast.LENGTH_SHORT).show();*/
+               Toast.makeText(mContext, mContext.getString(R.string.detail_delete_failed_toast),
+                        Toast.LENGTH_SHORT).show();
             }
         });
     }

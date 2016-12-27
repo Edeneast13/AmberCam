@@ -75,7 +75,7 @@
             android:theme="@style/AmberMaterial" >
         </activity>
         <activity
-            android:name="com.ambercam.android.camera2basic.ui.DetailActivity"
+            android:name="com.ambercam.android.camera2basic.views.DetailActivity"
             android:label="@string/title_activity_detail"
             android:parentActivityName="com.ambercam.android.camera2basic.ui.GalleryActivity"
             android:theme="@style/AmberMaterial" >

@@ -79,11 +79,10 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         returnIntentExtras();
 
         mAuth = FirebaseAuth.getInstance();
-
-        setAuthStateListener();
-
         mFirebaseStorage = FirebaseStorage.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
+
+        setFirebaseAuthListener();
 
         setDetailImageViewLongClickListener();
         setDetailDeleteButtonListener();
@@ -93,27 +92,6 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         returnUserPreferences();
 
         updateUI(mImageUrlList, mPosition);
-    }
-
-    /**
-     * listener for firebase authentication
-     */
-    public void setAuthStateListener(){
-        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(FirebaseAuth firebaseAuth) {
-                mActiveUser = firebaseAuth.getCurrentUser();
-                Log.i("Current User: ", mActiveUser + "");
-                if(mActiveUser!=null){
-                    mDatabaseReference = FirebaseDatabase
-                            .getInstance()
-                            .getReference()
-                            .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()) + "_count");
-                    mDetailPresenter.setChildEventListener(mDatabaseReference, mChildEventListener);
-                    mFirebaseData = setFirebaseData();
-                }
-            }
-        };
     }
 
     @Override
@@ -189,6 +167,28 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     }
 
     /**
+     * listener for firebase authentication
+     */
+    @Override
+    public void setFirebaseAuthListener(){
+        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(FirebaseAuth firebaseAuth) {
+                mActiveUser = firebaseAuth.getCurrentUser();
+                Log.i("Current User: ", mActiveUser + "");
+                if(mActiveUser!=null){
+                    mDatabaseReference = FirebaseDatabase
+                            .getInstance()
+                            .getReference()
+                            .child(Util.returnSplitEmail(mActiveUser.getEmail().toString()) + "_count");
+                    mDetailPresenter.setChildEventListener(mDatabaseReference, mChildEventListener);
+                    mFirebaseData = setFirebaseData();
+                }
+            }
+        };
+    }
+
+    /**
      * retrieve intent extras from previous activity
      */
     @Override
@@ -237,6 +237,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     /**
      * stores all current firebase data in a single object
      */
+    @Override
     public FirebaseData setFirebaseData(){
         FirebaseData firebaseData = new FirebaseData();
         firebaseData.setAuth(mAuth);
@@ -252,6 +253,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     /**
      * swipe listener for detail image view
      */
+    @Override
     public void setDetailImageViewSwipeListener() {
         mDetailImageView.setOnTouchListener(new OnSwipeTouchListener(getApplicationContext()) {
 

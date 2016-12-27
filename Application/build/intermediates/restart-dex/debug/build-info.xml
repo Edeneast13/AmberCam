@@ -5,42 +5,49 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="581033133768994"
+    timestamp="594939943389185"
     token="-4261480621792496612"
-    verifier="FIELD_ADDED" >
+    verifier="METHOD_ADDED" >
 
     <task
         name="javac"
-        duration="768" />
+        duration="959" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="83" />
+        duration="89" />
     <task
         name="verifier"
-        duration="7" />
+        duration="8" />
 
     <artifact
-        location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
         type="DEX" />
     <artifact
         location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="580679845274500"
+        timestamp="594310024967223"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/outputs/apk/Application-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="581033133768994"
-        verifier="FIELD_ADDED" >
+        timestamp="594612980007837"
+        verifier="METHOD_DELETED" >
         <artifact
             location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="594939943389185"
+        verifier="METHOD_ADDED" >
+        <artifact
+            location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
             type="DEX" />
         <artifact
             location="/Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"

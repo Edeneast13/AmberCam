@@ -10,42 +10,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db8f5e16-3270-4259-8554-a0dfc2a2689f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/builds/debug/484313162275637/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/DetailActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/views/DetailView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/views/DetailView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/views/GetStartedView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/ambercam/android/camera2basic/views/GetStartedView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.4.0/jars/classes.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.4.0/jars/classes.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/DetailActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/views/DetailView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/views/DetailView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/views/GetStartedView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental-verifier/debug/com/ambercam/android/camera2basic/views/GetStartedView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/zip-cache/0jcVl4LytnxQSu2Aw12kvhURYM0=" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/zip-cache/0jcVl4LytnxQSu2Aw12kvhURYM0=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/0jcVl4LytnxQSu2Aw12kvhURYM0=" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/0jcVl4LytnxQSu2Aw12kvhURYM0=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/Application/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
@@ -54,53 +86,70 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/DetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity$SlideImageViewAnimation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/DetailActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/views/DetailView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/views/DetailView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/views/GetStartedView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/ambercam/android/camera2basic/views/GetStartedView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/ambercam/android/camera2basic/ui/GetStartedActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter$SplitUrl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/ambercam/android/camera2basic/presenters/DetailPresenter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/ambercam/android/camera2basic/adapter/ImageAdapter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/ambercam/android/camera2basic/views/DetailView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/ambercam/android/camera2basic/views/DetailView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/ambercam/android/camera2basic/views/GetStartedView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/ambercam/android/camera2basic/views/GetStartedView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug.apk" afterPath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Application.iml" afterPath="$PROJECT_DIR$/Application/Application.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-hdpi.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-hdpi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-tvdpi-v4.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-tvdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xxhdpi.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xxhdpi.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/drawable.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/Application/build/intermediates/instant-run-support/debug/manifest.crc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/instant-run-support/debug/manifest.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/instant-run-support/debug/manifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout/activity_detail.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout/activity_detail.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/buildId.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/buildId.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/buildId.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/Application/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/DetailPresenter.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/DetailPresenter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/DetailView.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/DetailView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/GetStartedView.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/GetStartedView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="android-Camera2Basic-master.iws" />
@@ -134,48 +183,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DetailActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java">
+      <file leaf-file-name="GetStartedPresenter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/GetStartedPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3421#4160#0" expanded="true" />
-                <element signature="e#4159#4160#0" expanded="true" />
-                <element signature="e#7317#7473#0" expanded="true" />
-                <element signature="e#7472#7473#0" expanded="true" />
-                <element signature="e#7636#7854#0" expanded="true" />
-                <element signature="e#7853#7854#0" expanded="true" />
-                <element signature="e#10118#10464#0" expanded="true" />
-                <element signature="e#10463#10464#0" expanded="true" />
-                <element signature="e#11601#11640#0" expanded="true" />
-                <element signature="e#11970#12014#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailPresenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/DetailPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="153" column="70" selection-start-line="153" selection-start-column="70" selection-end-line="153" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-                <element signature="e#4662#4718#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GalleryActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GalleryActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1080">
-              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="90">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -2015,9 +2027,13 @@
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/CreateAccountView.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/presenters.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/Presenter.java" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/DetailView.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/models/FirebaseData.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/DetailPresenter.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/GetStartedView.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/DetailView.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/DetailActivity.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/GetStartedPresenter.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java" />
       </list>
     </option>
@@ -2025,7 +2041,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="726" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2120,16 +2136,38 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
+              <option name="myItemId" value="presenters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android-Camera2Basic-master" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camera2basic" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2452,7 +2490,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2463,9 +2501,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17377049" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07504078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35409835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5986949" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2504,23 +2542,51 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/GetStartedPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3421#4160#0" expanded="true" />
-            <element signature="e#4159#4160#0" expanded="true" />
-            <element signature="e#7317#7473#0" expanded="true" />
-            <element signature="e#7472#7473#0" expanded="true" />
-            <element signature="e#7636#7854#0" expanded="true" />
-            <element signature="e#7853#7854#0" expanded="true" />
-            <element signature="e#10118#10464#0" expanded="true" />
-            <element signature="e#10463#10464#0" expanded="true" />
-            <element signature="e#11601#11640#0" expanded="true" />
-            <element signature="e#11970#12014#0" expanded="true" />
+            <element signature="e#2960#3672#0" expanded="true" />
+            <element signature="e#3671#3672#0" expanded="true" />
+            <element signature="e#3838#4400#0" expanded="true" />
+            <element signature="e#4399#4400#0" expanded="true" />
+            <element signature="e#4685#5147#0" expanded="true" />
+            <element signature="e#5146#5147#0" expanded="true" />
+            <element signature="e#5193#5627#0" expanded="true" />
+            <element signature="e#5456#5493#0" expanded="true" />
+            <element signature="e#5626#5627#0" expanded="true" />
+            <element signature="e#5796#6153#0" expanded="true" />
+            <element signature="e#6152#6153#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/DetailPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2530,9 +2596,8 @@
           <caret line="123" column="81" selection-start-line="123" selection-start-column="81" selection-end-line="123" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#4662#4718#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2541,7 +2606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2550,9 +2614,7 @@
         <state relative-caret-position="255">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2569,19 +2631,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3421#4160#0" expanded="true" />
-            <element signature="e#4159#4160#0" expanded="true" />
-            <element signature="e#7317#7473#0" expanded="true" />
-            <element signature="e#7472#7473#0" expanded="true" />
-            <element signature="e#7636#7854#0" expanded="true" />
-            <element signature="e#7853#7854#0" expanded="true" />
-            <element signature="e#10118#10464#0" expanded="true" />
-            <element signature="e#10463#10464#0" expanded="true" />
-            <element signature="e#11601#11640#0" expanded="true" />
-            <element signature="e#11970#12014#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2589,19 +2639,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3421#4160#0" expanded="true" />
-            <element signature="e#4159#4160#0" expanded="true" />
-            <element signature="e#7317#7473#0" expanded="true" />
-            <element signature="e#7472#7473#0" expanded="true" />
-            <element signature="e#7636#7854#0" expanded="true" />
-            <element signature="e#7853#7854#0" expanded="true" />
-            <element signature="e#10118#10464#0" expanded="true" />
-            <element signature="e#10463#10464#0" expanded="true" />
-            <element signature="e#11601#11640#0" expanded="true" />
-            <element signature="e#11970#12014#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2609,13 +2647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -2640,13 +2671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/GetStartedView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/UsageView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2654,19 +2678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/DetailView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/Presenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2675,51 +2690,97 @@
         <state relative-caret-position="270">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GalleryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        <state relative-caret-position="-975">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/DetailPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="153" column="70" selection-start-line="153" selection-start-column="70" selection-end-line="153" selection-end-column="70" />
+        <state relative-caret-position="615">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#4662#4718#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+        <state relative-caret-position="180">
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/DetailView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/ui/GetStartedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <element signature="e#2960#3672#0" expanded="true" />
+            <element signature="e#3671#3672#0" expanded="true" />
+            <element signature="e#3838#4400#0" expanded="true" />
+            <element signature="e#4399#4400#0" expanded="true" />
+            <element signature="e#4685#5147#0" expanded="true" />
+            <element signature="e#5146#5147#0" expanded="true" />
+            <element signature="e#5193#5627#0" expanded="true" />
+            <element signature="e#5456#5493#0" expanded="true" />
+            <element signature="e#5626#5627#0" expanded="true" />
+            <element signature="e#5796#6153#0" expanded="true" />
+            <element signature="e#6152#6153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/views/GetStartedView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3421#4160#0" expanded="true" />
-            <element signature="e#4159#4160#0" expanded="true" />
-            <element signature="e#7317#7473#0" expanded="true" />
-            <element signature="e#7472#7473#0" expanded="true" />
-            <element signature="e#7636#7854#0" expanded="true" />
-            <element signature="e#7853#7854#0" expanded="true" />
-            <element signature="e#10118#10464#0" expanded="true" />
-            <element signature="e#10463#10464#0" expanded="true" />
-            <element signature="e#11601#11640#0" expanded="true" />
-            <element signature="e#11970#12014#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/ambercam/android/camera2basic/presenters/GetStartedPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,12 +1,9 @@
 package com.ambercam.android.camera2basic.ui;
 
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,7 +13,9 @@ import android.widget.Toast;
 
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.models.User;
+import com.ambercam.android.camera2basic.presenters.GetStartedPresenter;
 import com.ambercam.android.camera2basic.util.Util;
+import com.ambercam.android.camera2basic.views.GetStartedView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -24,17 +23,17 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class GetStartedActivity extends Activity {
+public class GetStartedActivity extends Activity implements GetStartedView {
 
     private EditText mEmailEditText;
     private EditText mPasswordEditText;
     private Button mLoginButton;
-    private String mEmail;
-    private String mPassword;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private TextView mCreateTextView;
     private ImageView mIconImageView;
+
+    private GetStartedPresenter mGetStartedPresenter;
 
     /**
      * LIFE CYCLE methods
@@ -44,8 +43,11 @@ public class GetStartedActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
 
+        mGetStartedPresenter = new GetStartedPresenter(getApplicationContext());
+        mGetStartedPresenter.attachView(this);
+
         initializeViews();
-        setViewTransitionAnimations();
+        mGetStartedPresenter.setViewTransitionAnimations(mIconImageView);
 
         mAuth = FirebaseAuth.getInstance();
         setFirebaseAuthListener();
@@ -86,44 +88,23 @@ public class GetStartedActivity extends Activity {
     }
 
     /**
-     * retrieves text from user input views
-     */
-    public User getTextFromViews(){
-
-        mEmail = mEmailEditText.getText().toString();
-        mPassword = mPasswordEditText.getText().toString();
-
-        User user = new User();
-
-        if(!mEmail.equals(null) && Util.isValidEmail(mEmail) == true){
-            user.setEmail(mEmail);
-            Log.i("Email: ", mEmail);
-        }
-        else{
-            Toast.makeText(getApplicationContext(), "Please enter a valid email",
-                    Toast.LENGTH_LONG).show();
-        }
-
-        if(mPassword.length() >= 6){
-            user.setPassword(mPassword);
-        }
-        else{
-            Toast.makeText(getApplicationContext(), "Password must be at least 6 characters",
-                    Toast.LENGTH_LONG).show();
-        }
-        return user;
-    }
-
-    /**
      * listener for login button
      */
     public void setLoginButtonListener(){
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                User user = getTextFromViews();
+
+                User user = mGetStartedPresenter.verifyTextFromViews(mEmailEditText.getText().toString(),
+                        mPasswordEditText.getText().toString());
+
                 if(Util.activeNetworkCheck(getApplicationContext()) == true){
-                    loginUserWithFirebase(user, mAuth);
+                    try{
+                        loginUserWithFirebase(user, mAuth);
+                    }
+                    catch (Exception e){
+                        e.printStackTrace();
+                    }
                 }
                 else{
                     Util.noActiveNetworkToast(getApplicationContext());
@@ -135,6 +116,7 @@ public class GetStartedActivity extends Activity {
     /**
      * initialize the listener for firebase authentication
      */
+    @Override
     public void setFirebaseAuthListener(){
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -153,6 +135,7 @@ public class GetStartedActivity extends Activity {
     /**
      * login an existing user using email and password
      */
+    @Override
     public void loginUserWithFirebase(User user, FirebaseAuth auth){
         auth.signInWithEmailAndPassword(user.getEmail(), user.getPassword())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -189,19 +172,6 @@ public class GetStartedActivity extends Activity {
                 overridePendingTransition(R.transition.slide_right, R.transition.fade_out);
             }
         });
-    }
-
-    public void setViewTransitionAnimations(){
-        ObjectAnimator iconMover = ObjectAnimator.ofFloat(
-                mIconImageView,
-                "translationY",
-                (Util.returnScreenHeight(getApplicationContext())),
-                0f);
-        iconMover.setDuration(700);
-
-        AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.play(iconMover);
-        animatorSet.start();
     }
 }
 
