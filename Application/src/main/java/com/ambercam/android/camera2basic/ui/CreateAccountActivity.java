@@ -5,12 +5,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.ambercam.android.camera2basic.models.CountData;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.models.User;
 import com.ambercam.android.camera2basic.presenters.CreateAccountPresenter;
@@ -22,23 +20,32 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class CreateAccountActivity extends AppCompatActivity implements CreateAccountView {
 
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private FirebaseDatabase mFirebaseDatabase;
-    private EditText mEmailEditText;
-    private EditText mConfirmEmailEditText;
-    private EditText mPasswordEditText;
-    private EditText mConfirmPasswordEditText;
-    private Button mCreateButton;
     private User mUser;
-    private Toolbar mToolbar;
-
     private CreateAccountPresenter mCreateAccountPresenter;
+
+    @BindView(R.id.create_account_email)
+    public EditText mEmailEditText;
+    @BindView(R.id.create_account_confirm_email)
+    public EditText mConfirmEmailEditText;
+    @BindView(R.id.create_account_password)
+    public EditText mPasswordEditText;
+    @BindView(R.id.create_account_confirm_password)
+    public EditText mConfirmPasswordEditText;
+    @BindView(R.id.create_account_create)
+    public Button mCreateButton;
+    @BindView(R.id.create_toolbar)
+    public Toolbar mToolbar;
 
     /**
      * LIFE CYCLE methods
@@ -48,17 +55,16 @@ public class CreateAccountActivity extends AppCompatActivity implements CreateAc
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        ButterKnife.bind(this);
+
         mCreateAccountPresenter = new CreateAccountPresenter(getApplicationContext());
         mCreateAccountPresenter.attachView(this);
 
-        initializeViews();
         initializeToolbarBehavior(mToolbar);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         setFirebaseAuthListener();
-
-        createButtonListener();
     }
 
     @Override
@@ -73,18 +79,6 @@ public class CreateAccountActivity extends AppCompatActivity implements CreateAc
         if (mAuthListener != null) {
             mFirebaseAuth.removeAuthStateListener(mAuthListener);
         }
-    }
-
-    /**
-     * initialize the views for the activity
-     */
-    public void initializeViews(){
-        mEmailEditText = (EditText)findViewById(R.id.create_account_email);
-        mConfirmEmailEditText = (EditText)findViewById(R.id.create_account_confirm_email);
-        mPasswordEditText = (EditText)findViewById(R.id.create_account_password);
-        mConfirmPasswordEditText = (EditText)findViewById(R.id.create_account_confirm_password);
-        mCreateButton = (Button)findViewById(R.id.create_account_create);
-        mToolbar = (Toolbar) findViewById(R.id.create_toolbar);
     }
 
     /**
@@ -156,25 +150,20 @@ public class CreateAccountActivity extends AppCompatActivity implements CreateAc
     /**
      * listener for create account button
      */
+    @OnClick(R.id.create_account_create)
     public void createButtonListener(){
-        mCreateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mUser = mCreateAccountPresenter.returnNewUser(
+                mEmailEditText.getText().toString(),
+                mConfirmEmailEditText.getText().toString(),
+                mPasswordEditText.getText().toString(),
+                mConfirmPasswordEditText.getText().toString());
 
-                mUser = mCreateAccountPresenter.returnNewUser(
-                        mEmailEditText.getText().toString(),
-                        mConfirmEmailEditText.getText().toString(),
-                        mPasswordEditText.getText().toString(),
-                        mConfirmPasswordEditText.getText().toString());
-
-                if(Util.activeNetworkCheck(getApplicationContext()) == true){
-                    createNewUser(mUser, mFirebaseAuth );
-                }
-                else{
-                    Util.noActiveNetworkToast(getApplicationContext());
-                }
-            }
-        });
+        if(Util.activeNetworkCheck(getApplicationContext()) == true){
+            createNewUser(mUser, mFirebaseAuth );
+        }
+        else{
+            Util.noActiveNetworkToast(getApplicationContext());
+        }
     }
 }
 

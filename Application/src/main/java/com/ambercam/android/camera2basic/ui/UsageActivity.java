@@ -5,14 +5,17 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.ambercam.android.camera2basic.models.CountData;
-import com.ambercam.android.camera2basic.models.PurchaseItem;
 import com.ambercam.android.camera2basic.R;
 import com.ambercam.android.camera2basic.adapter.PurchaseAdapter;
+import com.ambercam.android.camera2basic.models.CountData;
+import com.ambercam.android.camera2basic.models.PurchaseItem;
+import com.ambercam.android.camera2basic.presenters.UsagePresenter;
 import com.ambercam.android.camera2basic.util.Util;
+import com.ambercam.android.camera2basic.views.UsageView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -25,30 +28,34 @@ import java.util.ArrayList;
 
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
-public class UsageActivity extends AppCompatActivity {
+public class UsageActivity extends AppCompatActivity implements UsageView{
 
     private Toolbar mToolbar;
-    private TextView mUsageTextView;
-    private MaterialProgressBar mUsageProgessBar;
-    private TextView mUsagePercentTextView;
+    public TextView mUsageTextView;
+    public MaterialProgressBar mUsageProgessBar;
+    public TextView mUsagePercentTextView;
     private CardView mCloudCardView;
     private CardView mPurchaseCardView;
-    private TextView mUserNameTextView;
-    private ListView mPurchaseListView;
+    public TextView mUserNameTextView;
+    public ListView mPurchaseListView;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     private FirebaseUser mActiveUser;
     private DatabaseReference mDatabaseReference;
-    private CountData mCountData;
     private ChildEventListener mChildEventListener;
 
+    private UsagePresenter mUsagePresenter;
     private ArrayList<PurchaseItem> mPurchaseItems = new ArrayList<>();
+    private CountData mCountData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usage);
+
+        mUsagePresenter = new UsagePresenter(getApplicationContext());
+        mUsagePresenter.attachView(this);
 
         initializeViews();
         setToolbarBehavior(mToolbar);
@@ -101,7 +108,8 @@ public class UsageActivity extends AppCompatActivity {
     /**
      * sets the authentication state listener for firebase
      */
-    private void setFirebaseAuthListener(){
+    @Override
+    public void setFirebaseAuthListener(){
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -109,48 +117,33 @@ public class UsageActivity extends AppCompatActivity {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if(firebaseUser != null){
                     mActiveUser = firebaseUser;
+
                     mDatabaseReference = FirebaseDatabase
                             .getInstance()
                             .getReference()
                             .child(Util.returnSplitEmail(firebaseUser.getEmail().toString()) + "_count");
 
                     setChildEventListener(mDatabaseReference, mChildEventListener);
-                    setUserNameTextView();
+
+                    updateUI();
                 }
             }
         };
     }
 
     /**
-     * set the child event listener that retrieves the count data from firebase
+     * sets card color background
      */
-    public void setChildEventListener(DatabaseReference reference,
-                                      ChildEventListener childEventListener){
+    public void setCardBackgroundColors(){
+        mCloudCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
+        mPurchaseCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
+    }
 
-        childEventListener = new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                mCountData = dataSnapshot.getValue(CountData.class);
-                updateUI();
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-            }
-        };
-        reference.addChildEventListener(childEventListener);
+    /**
+     * sets text for user name textView
+     */
+    public void setUserNameTextView(){
+        mUserNameTextView.setText(mActiveUser.getEmail().toString());
     }
 
     /**
@@ -177,21 +170,6 @@ public class UsageActivity extends AppCompatActivity {
     }
 
     /**
-     * sets card color background
-     */
-    public void setCardBackgroundColors(){
-        mCloudCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
-        mPurchaseCardView.setCardBackgroundColor(getResources().getColor(R.color.cardview_light_background));
-    }
-
-    /**
-     * sets text for user name textView
-     */
-    public void setUserNameTextView(){
-        mUserNameTextView.setText(mActiveUser.getEmail().toString());
-    }
-
-    /**
      * populates the purchaseItems arrayList with array resources
      */
     public void setPurchaseItems(){
@@ -203,14 +181,50 @@ public class UsageActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * updates the ui with data from firebase
+     */
     public void updateUI(){
+
         setUsageProgessBarValue(mCountData.getImageMax(), mCountData.getImageCount());
         setUsageTextViewText(mCountData.getImageMax(), mCountData.getImageCount());
         setCloudPercentText(mCountData.getImageMax(), mCountData.getImageCount());
+        setUserNameTextView();
 
         setPurchaseItems();
         PurchaseAdapter adapter = new PurchaseAdapter(getApplicationContext(), mPurchaseItems);
         mPurchaseListView.setEnabled(false);
         mPurchaseListView.setAdapter(adapter);
+    }
+
+    /**
+     * set the child event listener that retrieves the count data from firebase
+     */
+    public void setChildEventListener(DatabaseReference reference,
+                                           ChildEventListener childEventListener){
+
+        childEventListener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                mCountData = dataSnapshot.getValue(CountData.class);
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+            }
+        };
+        reference.addChildEventListener(childEventListener);
     }
 }

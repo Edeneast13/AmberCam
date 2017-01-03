@@ -171,6 +171,7 @@ MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/brianroper/Document
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-v4:24.1.1] /Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.jakewharton:butterknife:8.4.0] /Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/AndroidManifest.xml:5:5-43
 	tools:overrideLibrary
 		ADDED from [com.afollestad.material-dialogs:core:0.9.0.1] /Users/brianroper/Documents/AmberCam Resources/android-Camera2Basic-master/Application/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.1/AndroidManifest.xml:11:9-72
 	android:targetSdkVersion
